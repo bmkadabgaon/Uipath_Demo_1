@@ -1,0 +1,54 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- none
+ 
+pool:
+  name: 'Uipath_Demo'
+  demands:
+  - agent.name -equals AgentDemo1
+ 
+steps:
+- task: UiPathTest@6
+  displayName: 'Run Test Manager Test Set - UPD:1'
+  inputs:
+    testTarget: 'TestSet'
+    orchestratorConnection: 'CICD_TM'
+    projectKey: 'UPD'
+    testSet: 'UPD:1'
+    folderName: 'Testing'
+    traceLevel: 'Verbose'
+ 
+- task: UiPathTest@6
+  displayName: 'Run Test Manager Test Set - UPD:3'
+  inputs:
+    testTarget: 'TestSet'
+    orchestratorConnection: 'CICD_TM'
+    projectKey: 'UPD'
+    testSet: 'UPD:3'
+    folderName: 'Testing'
+    traceLevel: 'Verbose'
+ 
+- task: UiPathTest@6
+  displayName: 'Run Test Manager Test Set - UPD:5'
+  inputs:
+    testTarget: 'TestSet'
+    orchestratorConnection: 'CICD_TM'
+    projectKey: 'UPD'
+    testSet: 'UPD:5'
+    folderName: 'Testing'
+    traceLevel: 'Verbose'
+ 
+- task: UiPathTest@6
+  displayName: 'Run Test Manager Test Set - UPD:82'
+  inputs:
+    testTarget: 'TestSet'
+    orchestratorConnection: 'CICD_TM'
+    projectKey: 'UPD'
+    testSet: 'UPD:82'
+    folderName: 'Testing'
+    traceLevel: 'Verbose'
+ 
