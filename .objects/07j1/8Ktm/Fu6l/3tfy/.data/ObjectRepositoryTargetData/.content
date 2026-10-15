@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="l7VhqQZSiEm-jmUp7qh_5A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="olympia.sarvarth.com/emergencyProfileInfo" CVScreenId="abed79f2-3df6-40f1-9ef8-74fe97cddb35" CvElementArea="621, 842, 630, 71" CvTextArea="747, 864, 332, 26" CvTextArgument="Save &amp; Proceed to Verification" CvType="Button" DesignTimeRectangle="624, 845, 624, 66" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='8' tag='BUTTON' type='' class='EmergencyContactProfilePage_label__HKpuQ' aaname='Save &amp;amp; Proceed to Verification' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Save &amp;amp; Proceed to Verification' /&gt;" Guid="6428a78f-7454-4b26-a8b4-66fd9b6c6ffa" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="abed79f2-3df6-40f1-9ef8-74fe97cddb35" CvElementArea="621, 842, 630, 71" CvTextArea="747, 864, 332, 26" CvTextArgument="Save &amp; Proceed to Verification" CvType="Button" DesignTimeRectangle="750, 863, 327, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='8' tag='SPAN' type='' class='' aaname='Save &amp;amp; Proceed to Verification' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Save &amp;amp; Proceed to Verification' /&gt;" Guid="8e337cf4-6d06-40ad-b7cd-727b54e7e5c9" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a5fc3d25ffa611b77f5546bc745a54fe.jpg" xmlns="">0SoMGC7pnnEuOyubrqZls7g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

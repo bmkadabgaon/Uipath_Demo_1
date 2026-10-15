@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="nzLTX01_kEKQo1jQH3D2vA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="olympia.sarvarth.com/login" DesignTimeRectangle="624, 890, 672, 60" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='3' tag='BUTTON' type='' class='MobileOTPAuth_label__MwAxR' aaname='Request OTP' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Request OTP' /&gt;" Guid="3aae5856-c877-4094-9394-c63440c94fba" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="889, 908, 141, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='3' tag='SPAN' type='' class='' aaname='Request OTP' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Request OTP' /&gt;" Guid="fe3a521a-1a4d-4eff-968c-f9756015c025" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2bd73f11c2a0d42b7b98c3f4e4ba4d16.jpg" xmlns="">0wpQtuy76cUmXWcHXvmhLpw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

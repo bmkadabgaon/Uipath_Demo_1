@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Hyf47LxG1kG3P2aziaH65g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dev1.register.runsatara.com/success" CVScreenId="631549f6-17ce-44b8-8ab6-0cfe239df3be" CvElementArea="742, 978, 420, 46" CvTextArea="863, 993, 149, 21" CvTextArgument="Complete my profile" CvType="Button" DesignTimeRectangle="744, 980, 416, 44" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='RegistrationSuccess_label__bAjay' aaname='Complete my profile' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Complete my profile' /&gt;" Guid="1bf1b0c2-7ff9-41f2-bfd8-77d1778b9bd6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="631549f6-17ce-44b8-8ab6-0cfe239df3be" CvTextArea="841, 328, 253, 22" CvTextArgument="Your account is created!" CvType="Text" DesignTimeRectangle="744, 323, 448, 32" FuzzySelectorArgument="&lt;webctrl tag='B' type='' class='RegistrationSuccess_heading__p3aLU' aaname='Your account is created!' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Your account is created!' /&gt;" Guid="c1bb4f71-bf50-4989-9e40-64e41c189bff" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="56aed558bb398d28e3ed50a28c249107.png" xmlns="">0NvAVd4hRd0evfVYP9Dvnkw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

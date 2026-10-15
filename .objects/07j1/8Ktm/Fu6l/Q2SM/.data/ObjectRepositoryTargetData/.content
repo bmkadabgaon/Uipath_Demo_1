@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Lkq3cs-CfUaWcMngV40OSQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="olympia.sarvarth.com/terms" CVScreenId="fa122ce7-2c0e-4c59-b795-47f35f6e0479" CvElementArea="624, 901, 672, 71" CvTextArea="797, 924, 279, 30" CvTextArgument="Accept Terms &amp; Continue" CvType="Button" DesignTimeRectangle="624, 903, 672, 68" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='2' tag='BUTTON' type='' class='' aaname='Accept Terms &amp;amp; Continue' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Accept Terms &amp;amp; Continue' /&gt;" Guid="b468fb92-f0d7-4484-b836-c670c8f8184e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="fa122ce7-2c0e-4c59-b795-47f35f6e0479" CvElementArea="624, 901, 672, 71" CvTextArea="797, 924, 279, 30" CvTextArgument="Accept Terms &amp; Continue" CvType="Button" DesignTimeRectangle="801, 921, 273, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='2' tag='SPAN' type='' class='' aaname='Accept Terms &amp;amp; Continue' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Accept Terms &amp;amp; Continue' /&gt;" Guid="2ca78ea9-5b4b-4999-a0bb-4d45aa6a9342" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6f6456785fe637401b7806319f9a3178.jpg" xmlns="">0SgGvwTvyW0maQbT83QgDdg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

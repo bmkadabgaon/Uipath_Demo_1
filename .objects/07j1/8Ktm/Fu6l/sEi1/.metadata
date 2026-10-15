@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Your Weight (in KG)",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "sEi1In3UNkiKOuFIaSuZRA",
+  "Reference": "MxNu6IYXQEiXuntZkOyw8A/sEi1In3UNkiKOuFIaSuZRA",
+  "ParentRef": "MxNu6IYXQEiXuntZkOyw8A/Fu6lU9rqZ0iS2NPQGpwgEg",
+  "Created": "2026-10-12T04:04:12.7262645Z",
+  "Updated": "2026-10-12T04:04:12.7262645Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

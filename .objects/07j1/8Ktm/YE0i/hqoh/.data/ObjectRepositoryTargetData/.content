@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="OlGVZBhIq0mkqY3WIH9tAg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dev1.register.runsatara.com/verificationComplete" CVScreenId="160babe6-0519-41e7-a022-10ad25b5114b" CvType="AnyWordGroup" DesignTimeRectangle="792, 254, 400, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='root' tag='DIV' type='' class='AadhaarVerificationComplete_verificationText__9CrYq' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="87b74aac-0cf7-4ab8-b42b-a67a99cd292d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="160babe6-0519-41e7-a022-10ad25b5114b" CvTextArea="743, 131, 174, 28" CvTextArgument="Details Updated!" CvType="Text" DesignTimeRectangle="744, 127, 448, 32" FuzzySelectorArgument="&lt;webctrl tag='B' type='' class='AadhaarVerificationComplete_heading__PUR4S' aaname='Details Updated!' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Details Updated!' /&gt;" Guid="b8293167-45ee-491c-898f-b27fb4c7d4fb" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f0aef7e16ea974b406680ca12c57e603.png" xmlns="">07ELsk3jSPUCCyzD53CV_Dg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

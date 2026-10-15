@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="meUQTQu9ok-JPYITAfqDpw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="olympia.sarvarth.com/emergencyProfileInfo" CVScreenId="83264736-bd7f-4c01-8a8c-690d88aec09b" CvElementArea="623, 821, 673, 69" CvType="InputBox" DesignTimeRectangle="624, 822, 672, 66" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='root' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ed17353e-a674-43ad-98bf-a65f066b7071" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="83264736-bd7f-4c01-8a8c-690d88aec09b" CvTextArea="621, 783, 174, 24" CvTextArgument="Contact Name *" CvType="Text" DesignTimeRectangle="624, 781, 672, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='' tag='STRONG' aaname='Contact Name' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Contact Name *' /&gt;" Guid="d51069f9-7fc9-4599-9638-8241863697be" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4fad81234b5ccf3569f0b666b582c593.jpg" xmlns="">0XjxxwFnQu0qmMmuiJCkKMA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

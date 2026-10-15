@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ccSWYC8N7Uy4LTjPVzl6Og" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="olympia.sarvarth.com/qualifiedRunner" DesignTimeRectangle="624, 581, 672, 96" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='B' /&gt;" Guid="17f4a512-fc86-4032-a7d9-f8f790a064b5" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d957ff41373e59c5b1ed55c1eb2d548b.jpg" xmlns="">0do4yFJjMt0eQgcDlNLopyg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

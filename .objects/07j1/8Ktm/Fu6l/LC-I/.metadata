@@ -1,0 +1,14 @@
+﻿{
+  "Name": "I am running Solo",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "LC-I4geqcUuXRudLqRMJgg",
+  "Reference": "MxNu6IYXQEiXuntZkOyw8A/LC-I4geqcUuXRudLqRMJgg",
+  "ParentRef": "MxNu6IYXQEiXuntZkOyw8A/Fu6lU9rqZ0iS2NPQGpwgEg",
+  "Created": "2026-10-12T04:45:51.1814839Z",
+  "Updated": "2026-10-12T04:45:51.1814839Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

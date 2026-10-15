@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="pM6-9qH9XUyTBjCHWpa1hg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dev1.register.runsatara.com/success" CVScreenId="631549f6-17ce-44b8-8ab6-0cfe239df3be" CvType="AnyWordGroup" DesignTimeRectangle="744, 323, 448, 32" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='B' /&gt;" Guid="ac7c7743-0949-4058-b90b-907a09c3305f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="631549f6-17ce-44b8-8ab6-0cfe239df3be" CvTextArea="898, 369, 139, 18" CvTextArgument="#RunSatara ID (RSID)" CvType="Text" DesignTimeRectangle="744, 369, 448, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='RegistrationSuccess_label__bAjay' parentid='root' tag='DIV' type='' aaname='#RunSatara ID (RSID)' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='#RunSatara ID (RSID)' /&gt;" Guid="eebaa931-ff65-4ade-bf31-7aed3b5992a6" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7f00aaeb8a822c09d55d6c396668a13d.png" xmlns="">0QCsWJYnDV02hTN_Mc_iGNg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

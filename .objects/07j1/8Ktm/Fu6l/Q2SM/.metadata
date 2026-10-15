@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Accept Terms & Continue",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "Q2SMNLjdv0qvcQEJW17o5g",
+  "Reference": "MxNu6IYXQEiXuntZkOyw8A/Q2SMNLjdv0qvcQEJW17o5g",
+  "ParentRef": "MxNu6IYXQEiXuntZkOyw8A/Fu6lU9rqZ0iS2NPQGpwgEg",
+  "Created": "2026-10-12T04:45:02.022867Z",
+  "Updated": "2026-10-12T04:45:02.022867Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

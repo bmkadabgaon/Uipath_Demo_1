@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Complete my profile",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "GG3UARZNREC_1k3Zj_WjRA",
+  "Reference": "MxNu6IYXQEiXuntZkOyw8A/GG3UARZNREC_1k3Zj_WjRA",
+  "ParentRef": "MxNu6IYXQEiXuntZkOyw8A/Fu6lU9rqZ0iS2NPQGpwgEg",
+  "Created": "2026-10-12T04:02:36.6156Z",
+  "Updated": "2026-10-12T04:02:36.6156Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="cgflOLePbEadlPACHGr11w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="olympia.sarvarth.com/successfulCheckOut" CVScreenId="9398a9f2-18ad-4063-9d45-312cd6273aa2" CvElementArea="697, 744, 523, 74" CvTextArea="827, 768, 223, 25" CvTextArgument="Download My Ticket" CvType="Button" DesignTimeRectangle="702, 747, 515, 68" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='' aaname='Download My Ticket' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Download My Ticket' /&gt;" Guid="5079bc1f-04fc-46bf-8578-57c85e62eac6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="9398a9f2-18ad-4063-9d45-312cd6273aa2" CvElementArea="697, 744, 523, 74" CvTextArea="827, 768, 223, 25" CvTextArgument="Download My Ticket" CvType="Button" DesignTimeRectangle="829, 765, 219, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Download My Ticket' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Download My Ticket' /&gt;" Guid="73e7b859-4803-4515-aeac-08e91568e50d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="dc6c6ef4ffe59f64a6c725bc796a6354.jpg" xmlns="">060xAv_L27Em3XUPrCflgOA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

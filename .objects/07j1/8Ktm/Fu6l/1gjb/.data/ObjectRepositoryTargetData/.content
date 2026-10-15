@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4q4yjKIsDUK14hH9EcJRqw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="staging.sarvarth.com/login" DesignTimeRectangle="11, 80, 60, 51" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='sandbox.cashfree.com/pg/view/sessions/checkout - Google Chrome -*' role='pane' /&gt;&lt;ctrl name='Back' role='push button' /&gt;" Guid="f42de755-b2f8-4a68-8aa1-04a4a178533e" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='sandbox.cashfree.com/pg/view/sessions/checkout - Google Chrome' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b015e7ba8bb35dfeba81104a32aa215a.jpg" xmlns="">0Jm4eS4lSMEe5gPEkGmxIoA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="U-whW4yXOECE7grVw5xf1g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="olympia.sarvarth.com/checkOut" CVScreenId="ff9a5d56-bfe4-49b7-ab91-d1061b071f36" CvElementArea="618, 926, 634, 70" CvTextArea="815, 951, 196, 28" CvTextArgument="Pay ₹2950/- Now!" CvType="Button" DesignTimeRectangle="624, 929, 624, 66" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='1' tag='BUTTON' type='' class='EventRegistrationCheckOut_button1__+m+X-' aaname='Pay ₹2950/- Now!' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Pay ₹2950/- Now!' /&gt;" Guid="8e80e139-e738-4c13-ba0f-1c0e96fc581d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ff9a5d56-bfe4-49b7-ab91-d1061b071f36" CvElementArea="618, 926, 634, 70" CvTextArea="815, 951, 196, 28" CvTextArgument="Pay ₹2950/- Now!" CvType="Button" DesignTimeRectangle="818, 946, 192, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='1' tag='SPAN' type='' class='' aaname='Pay ₹2950/- Now!' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Pay ₹2950/- Now!' /&gt;" Guid="f242b68b-cf0f-444e-a1c7-fd08b14991e5" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="18b0e6852254e14f161ba728c3de691b.jpg" xmlns="">0coQUjwx0rUe1gC_YPin1ag</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

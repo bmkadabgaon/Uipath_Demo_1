@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Inches",
+  "Type": "Element",
+  "TaxonomyType": "Input",
+  "Id": "OT6R8BFOXEqWOflbEP_vDQ",
+  "Reference": "MxNu6IYXQEiXuntZkOyw8A/OT6R8BFOXEqWOflbEP_vDQ",
+  "ParentRef": "MxNu6IYXQEiXuntZkOyw8A/Fu6lU9rqZ0iS2NPQGpwgEg",
+  "Created": "2026-10-12T04:03:52.0282918Z",
+  "Updated": "2026-10-12T04:03:52.0282918Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

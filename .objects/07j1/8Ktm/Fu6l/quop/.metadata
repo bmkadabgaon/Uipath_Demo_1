@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Next - T-Shirt Size",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "quop-m51Q0SXShGkEhDScg",
+  "Reference": "MxNu6IYXQEiXuntZkOyw8A/quop-m51Q0SXShGkEhDScg",
+  "ParentRef": "MxNu6IYXQEiXuntZkOyw8A/Fu6lU9rqZ0iS2NPQGpwgEg",
+  "Created": "2026-10-12T04:46:30.889833Z",
+  "Updated": "2026-10-12T04:46:30.889833Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

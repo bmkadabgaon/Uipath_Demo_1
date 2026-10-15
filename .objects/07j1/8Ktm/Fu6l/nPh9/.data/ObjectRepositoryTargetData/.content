@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LlM7Kcnz8EG9MfA2qlcZ9A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="olympia.sarvarth.com/emergencyProfileInfo" CVScreenId="83264736-bd7f-4c01-8a8c-690d88aec09b" CvElementArea="624, 657, 672, 77" CvType="InputBox" DesignTimeRectangle="624, 659, 672, 74" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='root' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="df95b661-c1b6-42c0-9eff-5e098e641345" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="83264736-bd7f-4c01-8a8c-690d88aec09b" CvTextArea="621, 620, 251, 29" CvTextArgument="Emergency Contact 1 *" CvType="Text" DesignTimeRectangle="624, 618, 672, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='STRONG' type='' class='' aaname='Emergency Contact 1' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Emergency Contact 1 *' /&gt;" Guid="acdb67df-2010-4803-aff6-609a511521f3" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ad65bd296c0966fd45fad6215088acbd.jpg" xmlns="">0JlJhlvYRGEa8phOZ7xYm8w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

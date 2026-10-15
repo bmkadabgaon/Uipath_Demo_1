@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Save & Proceed to Verif…",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "3tfy8Hh-v0mHprG3Z6jwDg",
+  "Reference": "MxNu6IYXQEiXuntZkOyw8A/3tfy8Hh-v0mHprG3Z6jwDg",
+  "ParentRef": "MxNu6IYXQEiXuntZkOyw8A/Fu6lU9rqZ0iS2NPQGpwgEg",
+  "Created": "2026-10-12T04:41:56.1608185Z",
+  "Updated": "2026-10-12T04:41:56.1608185Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

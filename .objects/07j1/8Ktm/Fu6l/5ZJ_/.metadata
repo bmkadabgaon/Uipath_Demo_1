@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Submit & Save(1)",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "5ZJ_Es8tSkaMqEmDUU6Tiw",
+  "Reference": "MxNu6IYXQEiXuntZkOyw8A/5ZJ_Es8tSkaMqEmDUU6Tiw",
+  "ParentRef": "MxNu6IYXQEiXuntZkOyw8A/Fu6lU9rqZ0iS2NPQGpwgEg",
+  "Created": "2026-10-12T04:48:37.1554847Z",
+  "Updated": "2026-10-12T04:48:37.1554847Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

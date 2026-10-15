@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Pay ₹2950- Now!",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "BptmiOZ9FUeY-QscYT488A",
+  "Reference": "MxNu6IYXQEiXuntZkOyw8A/BptmiOZ9FUeY-QscYT488A",
+  "ParentRef": "MxNu6IYXQEiXuntZkOyw8A/Fu6lU9rqZ0iS2NPQGpwgEg",
+  "Created": "2026-10-12T04:52:06.314803Z",
+  "Updated": "2026-10-12T04:52:06.314803Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

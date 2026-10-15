@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="QvbTwgUlX0-gWatuz7GPqQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="olympia.sarvarth.com/runnerClub" CVScreenId="cca921bf-e989-4fab-992e-92a8b2b843b5" CvElementArea="624, 495, 673, 75" CvType="InputBox" DesignTimeRectangle="624, 496, 672, 72" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' tag='DIV' type='' class='' aaname='' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="77d847dd-7aa9-4acc-abf5-b6f11dc6cb35" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="cca921bf-e989-4fab-992e-92a8b2b843b5" CvTextArea="620, 461, 307, 21" CvTextArgument="What club are you running for? *" CvType="Text" DesignTimeRectangle="624, 459, 672, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='What club are you running for?' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='What club are you running for? *' /&gt;" Guid="9103773c-4e64-47cb-a55e-f4982494a980" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c6cb79272c789ac3ca30c6805b6493df.jpg" xmlns="">0z7P_rV4TeUK36M1Khx3MtQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

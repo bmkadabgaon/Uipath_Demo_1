@@ -1,0 +1,14 @@
+﻿{
+  "Name": "What club are you runni…",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "wREX9CeC6kSDLnztywGhYg",
+  "Reference": "MxNu6IYXQEiXuntZkOyw8A/wREX9CeC6kSDLnztywGhYg",
+  "ParentRef": "MxNu6IYXQEiXuntZkOyw8A/Fu6lU9rqZ0iS2NPQGpwgEg",
+  "Created": "2026-10-12T04:45:28.5105077Z",
+  "Updated": "2026-10-12T04:45:28.5105077Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

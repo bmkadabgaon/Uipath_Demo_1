@@ -1,0 +1,9 @@
+{
+  "issueKeyTestcaseValues": {},
+  "testManagerBasePath": "https://cloud.uipath.com/sarvagdxiffk/defaulttenant/testmanager_",
+  "defaultProject": {
+    "id": "565b827a-d40c-0000-7a46-0b49b95c6f63",
+    "name": "UiPath Demo",
+    "key": "UID"
+  }
+}

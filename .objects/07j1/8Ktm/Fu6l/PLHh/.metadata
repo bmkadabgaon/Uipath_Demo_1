@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Next - Medical Informat…",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "PLHhv--oykChKQVGQq7w7Q",
+  "Reference": "MxNu6IYXQEiXuntZkOyw8A/PLHhv--oykChKQVGQq7w7Q",
+  "ParentRef": "MxNu6IYXQEiXuntZkOyw8A/Fu6lU9rqZ0iS2NPQGpwgEg",
+  "Created": "2026-10-12T04:05:39.3607078Z",
+  "Updated": "2026-10-12T04:05:39.3607078Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

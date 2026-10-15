@@ -1,0 +1,64 @@
+{
+  "GenerateCrossPlatformAttributes": false,
+  "GenerateSelectorsForInnerElements": true,
+  "Connections": [
+    {
+      "Name": "Demo",
+      "Description": null,
+      "Url": "  http://192.168.1.13:4723/",
+      "PlatformName": "Android",
+      "PlatformVersion": "15",
+      "DeviceName": "Moto g 34",
+      "SingleInstance": null,
+      "WaitForPageUpdate": true,
+      "Capabilities": {
+        "appium:automationName": "UiAutomator2"
+      },
+      "GeoLocation": null,
+      "LoggingModel": {
+        "LoggingEnabled": false,
+        "VideoRecordingEnabled": false,
+        "RecordingTimeLimit": 600,
+        "VideoQuality": 1,
+        "CollectScreenshot": 0,
+        "CollectPageSource": 0
+      },
+      "HttpHeaders": {},
+      "CvServer": null,
+      "CvApiKey": null,
+      "CvUseLocalServer": false,
+      "UseExistingSession": true
+    },
+    {
+      "Name": "Test Virtual Device",
+      "Description": null,
+      "Url": "http://192.168.1.16:4723/",
+      "PlatformName": "Android",
+      "PlatformVersion": "16",
+      "DeviceName": "sdk_gphone64_x86_64",
+      "SingleInstance": null,
+      "WaitForPageUpdate": true,
+      "Capabilities": {},
+      "GeoLocation": null,
+      "LoggingModel": {
+        "LoggingEnabled": false,
+        "VideoRecordingEnabled": false,
+        "RecordingTimeLimit": 600,
+        "VideoQuality": 1,
+        "CollectScreenshot": 0,
+        "CollectPageSource": 0
+      },
+      "HttpHeaders": {},
+      "CvServer": null,
+      "CvApiKey": null,
+      "CvUseLocalServer": false,
+      "UseExistingSession": true
+    }
+  ],
+  "Applications": [],
+  "NormalizeSliderValue": false,
+  "IdsMaxAllowedLength": 40,
+  "LogsPath": "%TEMP%\\UiPath Mobile Automation Logs",
+  "Variables": {},
+  "HttpHeaders": {}
+}

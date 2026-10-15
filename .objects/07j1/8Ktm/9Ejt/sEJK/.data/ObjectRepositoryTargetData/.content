@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ScZTRy-kk0qh08B_tbj15A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="dev1.register.runsatara.com/register2" CVScreenId="083f1b59-cb6d-4757-8308-37c3bb4f165f" CvElementArea="1048, 529, 146, 52" CvTextArea="1087, 545, 52, 18" CvTextArgument="XXXX" CvType="Button" DesignTimeRectangle="1051, 532, 141, 47" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='7' parentid='root' tag='DIV' /&gt;" Guid="f1a213b3-e1e8-40af-bdd1-71f5dc9173aa" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="083f1b59-cb6d-4757-8308-37c3bb4f165f" CvTextArea="786, 500, 257, 18" CvTextArgument="Your AADHAAR Card number (12 Digits):" CvType="Text" DesignTimeRectangle="744, 497, 343, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='MobileUserRegistrationDemographicPage_label1__koLEC' isleaf='1' parentid='root' tag='DIV' aaname='Your AADHAAR Card number (12 Digits):' matching:class='fuzzy' fuzzylevel:class='0.0' matching:isleaf='fuzzy' fuzzylevel:isleaf='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Your AADHAAR Card number (12 Digits):' /&gt;" Guid="e6e62c79-b73e-4644-b18a-0961ef214648" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="aa52f1b93ae4fb604cb5015df6b5ba58.png" xmlns="">0_y67LeMg-0SwGMc9yWjjsA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

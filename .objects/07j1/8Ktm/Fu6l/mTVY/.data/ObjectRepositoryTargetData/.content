@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4JtRd4-KGEad4ITvBo-SWg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="olympia.sarvarth.com/emergencyProfileInfo" CVScreenId="f60d9e6b-681b-4f61-9f54-a3f3cef78495" CvElementArea="625, 384, 671, 69" CvType="InputBox" DesignTimeRectangle="624, 385, 672, 66" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='root' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ba819ee4-dd2a-47aa-9e19-834e3c293d51" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f60d9e6b-681b-4f61-9f54-a3f3cef78495" CvTextArea="621, 347, 219, 24" CvTextArgument="Relation with you? *" CvType="Text" DesignTimeRectangle="624, 345, 672, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='' tag='STRONG' aaname='Relation with you?' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Relation with you? *' /&gt;" Guid="c803212e-c53b-402f-a4a3-440f2fd7e702" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b4d4baed0e2c9f8ce659968d974e593e.jpg" xmlns="">05sYyn9umckugaP0hIwpKog</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

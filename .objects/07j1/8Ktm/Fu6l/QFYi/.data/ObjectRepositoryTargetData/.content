@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="RuimPw8VyU-onx8QRfqNAw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="olympia.sarvarth.com/medicalProfileInfo" CVScreenId="bd28be40-ddf0-445c-925b-5a3ce666b4fe" CvTextArea="780, 747, 34, 22" CvTextArgument="No" CvType="Text" DesignTimeRectangle="763, 720, 108, 75" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='MedicalInformationProfilePage_radioframe__YAQ87' idx='8' parentid='root' tag='DIV' /&gt;" Guid="11d011fa-9a05-4273-862f-a2c08da58c29" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="cec9b6a4d66ff6c3ad6600bfb2068a3a.jpg" xmlns="">031lVFWEVK0W_eq3ok0DH8A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

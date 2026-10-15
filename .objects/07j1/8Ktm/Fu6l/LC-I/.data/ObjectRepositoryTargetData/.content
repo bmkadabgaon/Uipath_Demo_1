@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Llu7Xo5aekCUavmyNva9UA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="olympia.sarvarth.com/runnerClub" CVScreenId="bb1ec879-2544-4631-9a10-606da14b1d50" CvTextArea="639, 663, 170, 21" CvTextArgument="I am running Solo" CvType="Text" DesignTimeRectangle="625, 647, 655, 52" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='option' tag='DIV' /&gt;" Guid="e16099f8-a316-42f9-923e-2be7e2430a6b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="54285102359d300408af4d0f77d13057.jpg" xmlns="">0rVkiMxmtRkKqqoPLHX5MFQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

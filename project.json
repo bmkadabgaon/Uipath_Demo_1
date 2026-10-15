@@ -1,0 +1,115 @@
+{
+  "name": "UiPath Demo",
+  "projectId": "97966da6-b20a-4482-b191-fa2b87d592a4",
+  "description": "Test Automation Project",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Database.Activities": "[2.0.0]",
+    "UiPath.DesktopTriggers.Activities": "[1.0.4]",
+    "UiPath.MobileAutomation.Activities": "25.10.2",
+    "UiPath.System.Activities": "[26.2.6]",
+    "UiPath.Testing.Activities": "[25.10.0]",
+    "UiPath.UIAutomation.Activities": "26.10.5",
+    "UiPath.WebAPI.Activities": "[2.3.2]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "25.10.1.0",
+  "projectVersion": "1.0.244356712",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "NewtonsoftJson",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": [
+        "RegisterUserTestCase.xaml"
+      ]
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "97f9c982-e1a6-42f0-ae5e-2523b15822f5",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "UiPath Demo\\01_SHHM Web\\TC01_Register New User.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "4f8828a9-7bb9-40cb-8361-add586749226",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "UiPath Demo\\02_SHHM API\\TC02_UpdateUserName.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "e4326a58-3564-4703-81e1-371ed6bc85cb",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "UiPath Demo\\03_SHHM Database\\TC03_DataBase.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c9d53e4c-992c-4bb0-a1ac-e0e38fc06c73",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "UiPath Demo\\04_SHHM Desktop\\TC04_SHHM_DesktopApplication.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "2e168f27-bb2f-48a3-b4a5-d47a1fb79da9",
+        "dataVariationFilePath": ".variations\\XmlTestCases_TestCases.json",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "UiPath Demo\\05_JSON & XML Validation\\TC05_Validate_Json_Test.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0dabdfb1-6e4c-448a-886b-d731f24ab42d",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tc01_Register_user.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "229ca01d-ac35-4508-9621-585a21154dc4",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "UiPath Demo\\01_SHHM Web\\Register_User and Ticket Generation.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f417ec34-0ede-4b44-94e4-3a0ba56a29fe",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "UiPath Demo\\02_SHHM API\\Update user.xaml"
+      }
+    ],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

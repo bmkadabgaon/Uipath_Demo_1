@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Next - Line-Up Qualific…",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "AYePH8eMbEmlXF7u9qY3TQ",
+  "Reference": "MxNu6IYXQEiXuntZkOyw8A/AYePH8eMbEmlXF7u9qY3TQ",
+  "ParentRef": "MxNu6IYXQEiXuntZkOyw8A/Fu6lU9rqZ0iS2NPQGpwgEg",
+  "Created": "2026-10-12T04:46:09.8709789Z",
+  "Updated": "2026-10-12T04:46:09.8709789Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

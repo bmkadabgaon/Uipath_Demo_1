@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Visit Event Page",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "kuQA1j7QxEaV8C8fbNSYRg",
+  "Reference": "MxNu6IYXQEiXuntZkOyw8A/kuQA1j7QxEaV8C8fbNSYRg",
+  "ParentRef": "MxNu6IYXQEiXuntZkOyw8A/Fu6lU9rqZ0iS2NPQGpwgEg",
+  "Created": "2026-10-12T04:51:22.7922684Z",
+  "Updated": "2026-10-12T04:51:22.7922684Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=26.10.5.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=26.4.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

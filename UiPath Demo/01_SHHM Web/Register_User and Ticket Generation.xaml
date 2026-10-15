@@ -1,0 +1,1496 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Register_User_and_Ticket_Generation" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Register_User_and_Ticket_Generation_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:utat="clr-namespace:UiPath.Testing.Activities.TestData;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.Testing.Activities.TestData</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Database.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DesktopTriggers.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>Microsoft.Diagnostics.FastSerialization</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Register_User_and_Ticket_Generation" sap:VirtualizedContainerService.HintSize="640.6666666666666,11726.666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser]" DisplayName="SHHM Landing Screen" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="556.6666666666666,11704" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.IfNotOpen]" ScopeGuid="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V2" WindowResize="Maximize">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="554.6666666666666,11509.333333333334" sap2010:WorkflowViewState.IdRef="Sequence_17">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="MobileNumber" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Login SHHM using Mobile Number" sap:VirtualizedContainerService.HintSize="520.6666666666666,2114.6666666666665" sap2010:WorkflowViewState.IdRef="Sequence_14">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Get Started Button" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.6666666666667,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_11" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/landing" ContentHash="Tlx55FBMGkKGD7ykmWHnrQ" DesignTimeRectangle="635, 839, 672, 66" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='2' tag='BUTTON' type='' class='Landing_buttonPrimary__kMjsh' aaname='Get Started' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Get Started' /&gt;" Guid="247c3ac4-23c4-4bdf-bde5-e58283c4cb36" InformativeScreenshot="b4e62bcb34f6da0e9b871bb0d4c1cc19.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/R6fkIDsmEU6pA6MF78Qxnw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="910, 856, 122, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='' aaname='Get Started' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Get Started' /&gt;" Guid="54f81ab4-7b35-4b39-bcb2-ff37ea3fef87" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NClick>
+              <Assign DisplayName="Assign 8 Digit Number to Variable" sap:VirtualizedContainerService.HintSize="486.6666666666667,176.66666666666666" sap2010:WorkflowViewState.IdRef="Assign_2">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:String">[MobileNumber]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:String">[DateTime.Now.ToString("ddHHmmss")]</InArgument>
+                </Assign.Value>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Assign>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Mobile Number" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.6666666666667,57.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Text="[&quot;96&quot;+MobileNumber.ToString()]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable CVScreenId="8c7a7b1b-a926-41c8-89b6-3a85faf4aac6" ContentHash="SbHuwuJ0jUufuoogR2UHKg" CvElementArea="18, 542, 1895, 60" CvType="InputBox" DesignTimeRectangle="96, 560, 1792, 22" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='tel' /&gt;" Guid="a5fe7b90-6d63-479b-a24a-75fdb7479238" InformativeScreenshot="dd81a353e615b058bf9cd0e9ce629f04.png" Reference="MxNu6IYXQEiXuntZkOyw8A/ViAPaY8Awk-nZITKgeprwg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NTypeInto>
+              <Delay DisplayName="wait for 1 sec" Duration="00:00:01" sap:VirtualizedContainerService.HintSize="486.6666666666667,57.333333333333336" sap2010:WorkflowViewState.IdRef="Delay_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Delay>
+              <uix:NGetText DisplayName="Get New Registration Mobile Number " HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.6666666666667,57.333333333333336" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" TextString="[GlobalVariablesNamespace.GlobalVariables.NewRegistrationMobileNumber]" Version="V5">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable CVScreenId="8c7a7b1b-a926-41c8-89b6-3a85faf4aac6" ContentHash="SbHuwuJ0jUufuoogR2UHKg" CvElementArea="18, 542, 1895, 60" CvType="InputBox" DesignTimeRectangle="96, 560, 1792, 22" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='tel' /&gt;" Guid="a5fe7b90-6d63-479b-a24a-75fdb7479238" InformativeScreenshot="dd81a353e615b058bf9cd0e9ce629f04.png" Reference="MxNu6IYXQEiXuntZkOyw8A/ViAPaY8Awk-nZITKgeprwg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.PointOffset>
+                      <uix:PointOffset />
+                    </uix:TargetAnchorable.PointOffset>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </uix:NGetText>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486.6666666666667,392" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,280" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:SetAsset TimeoutMS="{x:Null}" AssetName="SharedMobileNumber" DisplayName="Set Asset to Orchestrator" FolderPath="bhimbai.kadabgaon@sarvarth.com's workspace" sap:VirtualizedContainerService.HintSize="416,220" sap2010:WorkflowViewState.IdRef="SetAsset_2" Value="[GlobalVariablesNamespace.GlobalVariables.NewRegistrationMobileNumber]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:SetAsset>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <TryCatch DisplayName="Try Catch | OTP Verification" sap:VirtualizedContainerService.HintSize="486.6666666666667,1086.6666666666667" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <TryCatch.Try>
+                  <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="450,689.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Request OTP Button" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_12" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/login" ContentHash="nzLTX01_kEKQo1jQH3D2vA" DesignTimeRectangle="624, 890, 672, 60" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='3' tag='BUTTON' type='' class='MobileOTPAuth_label__MwAxR' aaname='Request OTP' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Request OTP' /&gt;" Guid="3aae5856-c877-4094-9394-c63440c94fba" InformativeScreenshot="2bd73f11c2a0d42b7b98c3f4e4ba4d16.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/q26zlDWXpUubd12eIYt3Pg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="889, 908, 141, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='3' tag='SPAN' type='' class='' aaname='Request OTP' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Request OTP' /&gt;" Guid="fe3a521a-1a4d-4eff-968c-f9756015c025" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type  OTP" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_14" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Text="123456" Version="V5">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="dev1.register.runsatara.com/verifyOTP" CVScreenId="dfec8c87-ff44-49d9-9aa8-71954ca56bc1" ContentHash="djLPxCxubEy2pAski-3wdA" CvTextArea="917, 606, 82, 20" CvTextArgument="XXXXXX" CvType="Text" DesignTimeRectangle="29, 590, 1880, 55" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='root' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="87d65c7f-5457-4dc5-8d0b-7d5d3c855cfc" InformativeScreenshot="8812e81fedde5695ca90c23bcdbd7345.png" IsResponsive="True" Reference="MxNu6IYXQEiXuntZkOyw8A/uBWbNLyH4EqundEElDIGGg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="dfec8c87-ff44-49d9-9aa8-71954ca56bc1" CvTextArea="924, 560, 88, 17" CvTextArgument="Enter OTP" CvType="Text" DesignTimeRectangle="29, 556, 1880, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='STRONG' type='' class='' aaname='Enter OTP' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Enter OTP' /&gt;" Guid="b8200687-c7f7-4837-916e-87990132ed0f" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Verify OTP Button" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,186" sap2010:WorkflowViewState.IdRef="NClick_13" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="dev1.register.runsatara.com/verifyOTP" CVScreenId="39003f66-f1e4-437f-b921-62b8297c5332" ContentHash="kzcQErDfgk2eKIFsXTGZ0g" CvElementArea="33, 722, 1871, 66" CvTextArea="902, 746, 96, 21" CvTextArgument="Verify OTP" CvType="Button" DesignTimeRectangle="29, 725, 1880, 60" DesignTimeScaleFactor="1.25" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='3' tag='BUTTON' type='' class='VerifyMobileOTP_label__mXTHv' aaname='Verify OTP' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Verify OTP' /&gt;" Guid="36d61581-727e-47bf-b2c9-04d93ec95f10" InformativeScreenshot="913597fca88867923653dce90ff20fcf.png" Reference="MxNu6IYXQEiXuntZkOyw8A/WJnLgjGG3kmOeTnWQPw_bA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="39003f66-f1e4-437f-b921-62b8297c5332" CvTextArea="924, 560, 88, 17" CvTextArgument="Enter OTP" CvType="Text" DesignTimeRectangle="29, 556, 1880, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='STRONG' type='' class='' aaname='Enter OTP' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Enter OTP' /&gt;" Guid="dd7485e9-a29c-4001-b53c-5a478360818a" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NClick>
+                  </Sequence>
+                </TryCatch.Try>
+                <TryCatch.Catches>
+                  <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                    <ActivityAction x:TypeArguments="s:Exception">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Catch {ExceptionType}" sap:VirtualizedContainerService.HintSize="450,174.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Throw Exception="[New System.Exception(&quot;Login failed: Could not verify OTP.&quot;)]" sap:VirtualizedContainerService.HintSize="416,114.66666666666667" sap2010:WorkflowViewState.IdRef="Throw_2" />
+                      </Sequence>
+                    </ActivityAction>
+                  </Catch>
+                </TryCatch.Catches>
+                <TryCatch.Finally>
+                  <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="450,90.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </Sequence>
+                </TryCatch.Finally>
+              </TryCatch>
+            </Sequence>
+            <Sequence DisplayName="Register User" sap:VirtualizedContainerService.HintSize="520.6666666666666,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_15">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="Register Screen 1" sap:VirtualizedContainerService.HintSize="486,1812.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="FirstName" />
+                  <Variable x:TypeArguments="x:String" Name="LastName" />
+                  <Variable x:TypeArguments="x:Decimal" Name="EmailSuffixNumber" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Male" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="NClick_14" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="dev1.register.runsatara.com/register" ContentHash="pn4E3HWQ50uCPjC4q9u8cw" DesignTimeRectangle="1472, 417, 25, 25" DesignTimeScaleFactor="1.25" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='4' parentid='root' tag='DIV' /&gt;" Guid="7ebbeead-2257-4075-8d6c-26af7352ad01" InformativeScreenshot="4bc4223455d787c404091648a5746108.png" Reference="MxNu6IYXQEiXuntZkOyw8A/8_qOu9TbiUqYGyRFkS_WXg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector" Version="V6">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+                <utat:GivenName DisplayName="Generate Random First Name" GivenNameResult="[FirstName]" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="GivenName_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </utat:GivenName>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type FirstName" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_15" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Text="[FirstName]" Version="V5">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="dev1.register.runsatara.com/register" CVScreenId="4ef532f8-0141-4771-9bbb-a6a35301ae5d" ContentHash="K5rqdaoZHUuUSSFgccTqVA" CvElementArea="27, 423, 926, 58" CvType="InputBox" DesignTimeRectangle="50, 441, 881, 23" DesignTimeScaleFactor="1.25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" Guid="e12bf766-ea89-4dc8-8fe9-3be34872797b" InformativeScreenshot="bcd95c75b419abb6de9f62ca5d262949.png" Reference="MxNu6IYXQEiXuntZkOyw8A/YIcfLwffsk6RCvhiEvi7Yw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector, CV" Version="V6">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="4ef532f8-0141-4771-9bbb-a6a35301ae5d" CvTextArea="27, 391, 277, 20" CvTextArgument="Your Full Name (as on Aadhaar Card)*" CvType="Text" DesignTimeRectangle="29, 390, 267, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='SPAN' class='' aaname='Your Full Name (as on Aadhaar Card)' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Your Full Name (as on Aadhaar Card)' /&gt;" Guid="d6968166-3658-4152-be80-98095d710cda" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NTypeInto>
+                <utat:LastName DisplayName="Generate Random Last Name" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="LastName_2" LastNameResult="[LastName]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </utat:LastName>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type LastName" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_16" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Text="[LastName]" Version="V5">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="dev1.register.runsatara.com/register" CVScreenId="4ef532f8-0141-4771-9bbb-a6a35301ae5d" ContentHash="E_LXzg0GP06H94LSUHA0Aw" CvElementArea="964, 423, 926, 57" CvType="InputBox" DesignTimeRectangle="988, 441, 881, 23" DesignTimeScaleFactor="1.25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='2' tag='INPUT' /&gt;" Guid="b5ec7fb8-c0c4-4c46-b643-4f9224849f19" InformativeScreenshot="907105c524604c8c4be869b6124831e3.png" Reference="MxNu6IYXQEiXuntZkOyw8A/0GgYDzIxjk2GgbOKLvam_A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector, CV" Version="V6">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="4ef532f8-0141-4771-9bbb-a6a35301ae5d" CvTextArea="27, 391, 277, 20" CvTextArgument="Your Full Name (as on Aadhaar Card)*" CvType="Text" DesignTimeRectangle="29, 390, 267, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='SPAN' class='' aaname='Your Full Name (as on Aadhaar Card)' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Your Full Name (as on Aadhaar Card)' /&gt;" Guid="00b42a3d-139e-42bc-83d6-da02f2ce69bd" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NTypeInto>
+                <utat:RandomNumber Decimals="{x:Null}" DisplayName="Generate Random Email Number" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="RandomNumber_5" Max="1000" Min="10" Output="[EmailSuffixNumber]">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </utat:RandomNumber>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Enter Email Address" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="NTypeInto_17" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Text="[FirstName.ToString+LastName.ToString+MobileNumber.ToString+&quot;@gmail.com&quot;]" Version="V5">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="dev1.register.runsatara.com/register" CVScreenId="8c6675e9-6f6c-4d60-ac04-52a23fd13fe2" ContentHash="1yPAgAdVqUatCP9uvyuchw" CvElementArea="22, 746, 1869, 56" CvType="InputBox" DesignTimeRectangle="29, 747, 1861, 55" DesignTimeScaleFactor="1.25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='root' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="c4a7ec03-e2b5-49b7-8e5c-e6515d76270b" InformativeScreenshot="dbf33de02c6d9d6d2abed3906159e150.png" IsResponsive="True" Reference="MxNu6IYXQEiXuntZkOyw8A/ZA5us7ZyI0eQGXAZ-6Yi1g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="8c6675e9-6f6c-4d60-ac04-52a23fd13fe2" CvTextArea="27, 716, 134, 17" CvTextArgument="Email Address *" CvType="Text" DesignTimeRectangle="29, 713, 1861, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='STRONG' class='' aaname='Email Address' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Email Address *' /&gt;" Guid="d19330cf-8309-4a1e-815b-2bc632ac1d23" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NTypeInto>
+                <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,318.6666666666667" sap2010:WorkflowViewState.IdRef="NMouseScroll_3" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                  <uix:NMouseScroll.SearchedElement>
+                    <uix:SearchedElement>
+                      <uix:SearchedElement.OutUiElement>
+                        <OutArgument x:TypeArguments="ui:UiElement" />
+                      </uix:SearchedElement.OutUiElement>
+                      <uix:SearchedElement.Target>
+                        <uix:TargetAnchorable BrowserURL="dev1.register.runsatara.com/register" CVScreenId="cc632348-674b-4214-aa5e-ef7cb9e0295a" ContentHash="qMQ6aNOcI0ijek6_dRgEgg" CvElementArea="23, 691, 1867, 60" CvType="InputBox" DesignTimeRectangle="29, 694, 1861, 55" DesignTimeScaleFactor="1.25" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='8' parentid='root' tag='DIV' /&gt;" Guid="49c7da44-c374-489b-b9d2-32a1686597f6" InformativeScreenshot="623894f56390964583d19e2dad42b71c.png" Reference="MxNu6IYXQEiXuntZkOyw8A/VRs8168mCkC2Fx4eGLY_Yw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector, CV" Version="V6">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="cc632348-674b-4214-aa5e-ef7cb9e0295a" CvTextArea="27, 664, 145, 17" CvTextArgument="Mobile Number *" CvType="Text" DesignTimeRectangle="29, 660, 1861, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='' tag='STRONG' aaname='Mobile Number' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Mobile Number *' /&gt;" Guid="4ade1f0d-771d-431e-aec1-7e34dadb94d7" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                          <uix:TargetAnchorable.PointOffset>
+                            <uix:PointOffset />
+                          </uix:TargetAnchorable.PointOffset>
+                        </uix:TargetAnchorable>
+                      </uix:SearchedElement.Target>
+                      <uix:SearchedElement.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:SearchedElement.Timeout>
+                    </uix:SearchedElement>
+                  </uix:NMouseScroll.SearchedElement>
+                </uix:NMouseScroll>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Mobile Number" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_18" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Text="[&quot;96&quot;+MobileNumber.ToString()]" Version="V5">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="dev1.register.runsatara.com/register" CVScreenId="cc632348-674b-4214-aa5e-ef7cb9e0295a" ContentHash="qMQ6aNOcI0ijek6_dRgEgg" CvElementArea="23, 691, 1867, 60" CvType="InputBox" DesignTimeRectangle="29, 694, 1861, 55" DesignTimeScaleFactor="1.25" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='8' parentid='root' tag='DIV' /&gt;" Guid="49c7da44-c374-489b-b9d2-32a1686597f6" InformativeScreenshot="623894f56390964583d19e2dad42b71c.png" Reference="MxNu6IYXQEiXuntZkOyw8A/VRs8168mCkC2Fx4eGLY_Yw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector, CV" Version="V6">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="cc632348-674b-4214-aa5e-ef7cb9e0295a" CvTextArea="27, 664, 145, 17" CvTextArgument="Mobile Number *" CvType="Text" DesignTimeRectangle="29, 660, 1861, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='' tag='STRONG' aaname='Mobile Number' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Mobile Number *' /&gt;" Guid="4ade1f0d-771d-431e-aec1-7e34dadb94d7" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NTypeInto>
+                <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Scroll Mouse to DOB Element" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,318.6666666666667" sap2010:WorkflowViewState.IdRef="NMouseScroll_4" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                  <uix:NMouseScroll.SearchedElement>
+                    <uix:SearchedElement>
+                      <uix:SearchedElement.OutUiElement>
+                        <OutArgument x:TypeArguments="ui:UiElement" />
+                      </uix:SearchedElement.OutUiElement>
+                      <uix:SearchedElement.Target>
+                        <uix:TargetAnchorable BrowserURL="dev1.register.runsatara.com/register" CVScreenId="75f14ad8-942b-4c6c-afc5-582bc682e35f" ContentHash="bVdN22S-Y0qmkZjYMfxKig" CvElementArea="26, 833, 1861, 51" CvType="InputBox" DesignTimeRectangle="29, 836, 1861, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='root' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="4592a7d2-3d01-4e85-a3c8-b6b6d91393ed" InformativeScreenshot="28d605d1594e56c68ed2ce53783ccb59.png" IsResponsive="True" Reference="MxNu6IYXQEiXuntZkOyw8A/2UFYZUHMhkiLMLhcXfacXw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="75f14ad8-942b-4c6c-afc5-582bc682e35f" CvTextArea="27, 806, 304, 16" CvTextArgument="Your Date of Birth (As on Aadhaar Card) *" CvType="Text" DesignTimeRectangle="29, 805, 1861, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Your Date of Birth (As on Aadhaar Card)' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Your Date of Birth (As on Aadhaar Card) *' /&gt;" Guid="3960b8bb-0f5b-4516-b934-537a21f059a6" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:SearchedElement.Target>
+                      <uix:SearchedElement.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:SearchedElement.Timeout>
+                    </uix:SearchedElement>
+                  </uix:NMouseScroll.SearchedElement>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NMouseScroll>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Your Date of Birth" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_19" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Text="04-11-1998" Version="V5">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="dev1.register.runsatara.com/register" CVScreenId="75f14ad8-942b-4c6c-afc5-582bc682e35f" ContentHash="bVdN22S-Y0qmkZjYMfxKig" CvElementArea="26, 833, 1861, 51" CvType="InputBox" DesignTimeRectangle="29, 836, 1861, 47" DesignTimeScaleFactor="1.25" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='root' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="4592a7d2-3d01-4e85-a3c8-b6b6d91393ed" InformativeScreenshot="28d605d1594e56c68ed2ce53783ccb59.png" IsResponsive="True" Reference="MxNu6IYXQEiXuntZkOyw8A/2UFYZUHMhkiLMLhcXfacXw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="75f14ad8-942b-4c6c-afc5-582bc682e35f" CvTextArea="27, 806, 304, 16" CvTextArgument="Your Date of Birth (As on Aadhaar Card) *" CvType="Text" DesignTimeRectangle="29, 805, 1861, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='Your Date of Birth (As on Aadhaar Card)' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Your Date of Birth (As on Aadhaar Card) *' /&gt;" Guid="3960b8bb-0f5b-4516-b934-537a21f059a6" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NTypeInto>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Save and Continue" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,186" sap2010:WorkflowViewState.IdRef="NClick_15" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="dev1.register.runsatara.com/register" CVScreenId="75f14ad8-942b-4c6c-afc5-582bc682e35f" ContentHash="kPIRvJKhMUmElsStD3fI_A" CvElementArea="23, 946, 1846, 63" CvTextArea="854, 971, 153, 16" CvTextArgument="Save and Continue" CvType="Button" DesignTimeRectangle="29, 949, 1840, 60" DesignTimeScaleFactor="1.25" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='9' tag='BUTTON' type='' class='MobileUserRegistration_label__phsIO' aaname='Save and Continue' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Save and Continue' /&gt;" Guid="25461cca-9f9d-4066-b207-369898292af5" InformativeScreenshot="eb5d4c1a345f2704b5872a4e8c7cc3b4.png" Reference="MxNu6IYXQEiXuntZkOyw8A/0buY9AK0QUqXLFbAYeimXQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="cc632348-674b-4214-aa5e-ef7cb9e0295a" CvElementArea="23, 946, 1846, 63" CvTextArea="854, 971, 153, 16" CvTextArgument="Save and Continue" CvType="Button" DesignTimeRectangle="855, 964, 151, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='9' tag='SPAN' type='' class='' aaname='Save and Continue' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Save and Continue' /&gt;" Guid="ffbffd7a-1640-4c48-953f-77c2b841763a" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+              </Sequence>
+              <Sequence DisplayName="Register Screen 2" sap:VirtualizedContainerService.HintSize="486,2792" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:Decimal" Name="AadhaarFirstFourDigit" />
+                  <Variable x:TypeArguments="x:Decimal" Name="AadhaarLastFourDigit" />
+                  <Variable x:TypeArguments="x:Decimal" Name="AadhaarMiddleFourDigit" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Upload Picture" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="dev1.register.runsatara.com/register2" CVScreenId="e66b559c-3be6-4a0d-b536-471d4cef5696" ContentHash="J9SeltTRBUO4HtceKupbOQ" CvElementArea="137, 401, 124, 36" CvTextArea="152, 411, 94, 17" CvTextArgument="Upload Picture" CvType="Button" DesignTimeRectangle="140, 403, 120, 32" DesignTimeScaleFactor="1.25" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='' aaname='Upload Picture' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Upload Picture' /&gt;" Guid="d0051a49-8eb2-4c4a-a643-ef9b61d254dc" InformativeScreenshot="41197a55f49abf00ae36a501301ec0de.png" Reference="MxNu6IYXQEiXuntZkOyw8A/uwrttzutokSPMJlfbRruZg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="e66b559c-3be6-4a0d-b536-471d4cef5696" CvElementArea="137, 401, 124, 36" CvTextArea="152, 411, 94, 17" CvTextArgument="Upload Picture" CvType="Button" DesignTimeRectangle="155, 411, 90, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Upload Picture' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Upload Picture' /&gt;" Guid="b023a1c5-ed2a-42cb-81de-5507f2b8b584" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Private: Type Image Path" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_20" InteractionMode="HardwareEvents" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Text="C:\Users\BhimbaiKadabgaon\Downloads\PhotoGraph (1).jpeg" Version="V5">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="dev1.register.runsatara.com/register2" CVScreenId="7b4937f5-4be4-4d67-b508-6e284c4b081d" ContentHash="knCyEcza-0u8sfLPqeYX5g" CvElementArea="225, 625, 968, 31" CvType="InputBox" DesignTimeRectangle="234, 632, 933, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;&lt;wnd ctrlid='1148' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;" Guid="ba9c4060-5941-411a-a5bf-eef22260cee0" InformativeScreenshot="aaf94a7eba7126db0ff086c8bae9616a.png" IsResponsive="True" Reference="MxNu6IYXQEiXuntZkOyw8A/3UDdFNQ0sEqf_WK0RYzGTA" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="7b4937f5-4be4-4d67-b508-6e284c4b081d" CvTextArea="155, 635, 69, 13" CvTextArgument="File name:" CvType="Text" DesignTimeRectangle="157, 632, 67, 20" ElementType="Text" FuzzySelectorArgument="&lt;wnd ctrlid='1090' title='File &amp;amp;name:' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' matching:title='fuzzy' fuzzylevel:title='0.0' check:text='File &amp;amp;name:' /&gt;" Guid="e7722e74-675e-48c0-8e08-0ff1cabf9c26" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NTypeInto>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Open" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_17" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable CVScreenId="5aeb5e84-39b8-43be-b18e-426491fa6b40" ContentHash="uDD1Z_IE4UuTwvV_-eTwcg" CvElementArea="1206, 662, 110, 34" CvTextArea="1241, 672, 37, 17" CvTextArgument="Open" CvType="Button" DesignTimeRectangle="1206, 664, 110, 33" DesignTimeScaleFactor="1.25" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Open' /&gt;" Guid="1d3314da-5aee-4521-a002-df7de4320770" InformativeScreenshot="3f4cc105fefdd806b7c6ce2fc5c358c1.png" Reference="MxNu6IYXQEiXuntZkOyw8A/0TCpDh_xV02QvLanJ3B2Gw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='#32770' title='Open' /&gt;" SearchSteps="Selector, CV" Version="V6">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="5aeb5e84-39b8-43be-b18e-426491fa6b40" CvElementArea="1330, 662, 110, 34" CvTextArea="1361, 672, 46, 15" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="1331, 664, 110, 33" ElementType="Button" FuzzySelectorArgument="&lt;wnd ctrlid='2' title='Cancel' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' matching:title='fuzzy' fuzzylevel:title='0.0' check:text='Cancel' /&gt;" Guid="50b0fc96-51a9-48e4-9193-5b6c824c70f0" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+                <utat:RandomNumber Decimals="{x:Null}" DisplayName="Random Aadhaar First Four Digit" sap:VirtualizedContainerService.HintSize="416,229.33333333333334" sap2010:WorkflowViewState.IdRef="RandomNumber_6" Max="9999" Min="1000" Output="[AadhaarFirstFourDigit]" />
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Aadhaar First Four Digit" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_21" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Text="[AadhaarFirstFourDigit.ToString()]" Version="V5">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="dev1.register.runsatara.com/register2" CVScreenId="083f1b59-cb6d-4757-8308-37c3bb4f165f" ContentHash="Up6K5JX840We5fKiSb9n0g" CvElementArea="741, 529, 147, 52" CvTextArea="781, 545, 52, 18" CvTextArgument="XXXX" CvType="Button" DesignTimeRectangle="744, 532, 141, 47" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='root' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="aa0069ca-fd00-4fb9-9e4c-eb1079160b93" InformativeScreenshot="63af8354bc35eef0e09b14192a8b36fb.png" Reference="MxNu6IYXQEiXuntZkOyw8A/IhMEbj3hEEWgdBohnvYeNQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="083f1b59-cb6d-4757-8308-37c3bb4f165f" CvTextArea="786, 500, 257, 18" CvTextArgument="Your AADHAAR Card number (12 Digits):" CvType="Text" DesignTimeRectangle="744, 497, 343, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='MobileUserRegistrationDemographicPage_label1__koLEC' isleaf='1' parentid='root' tag='DIV' aaname='Your AADHAAR Card number (12 Digits):' matching:class='fuzzy' fuzzylevel:class='0.0' matching:isleaf='fuzzy' fuzzylevel:isleaf='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Your AADHAAR Card number (12 Digits):' /&gt;" Guid="ba34ce12-1d28-4f77-8e01-3867ed4d69b8" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NTypeInto>
+                <utat:RandomNumber Decimals="{x:Null}" DisplayName="Random Aadhar Middle Four Digit" sap:VirtualizedContainerService.HintSize="416,229.33333333333334" sap2010:WorkflowViewState.IdRef="RandomNumber_7" Max="9999" Min="1000" Output="[AadhaarMiddleFourDigit]" />
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Aadhaar Middle Four Digit" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_22" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Text="[AadhaarMiddleFourDigit.ToString]" Version="V5">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="dev1.register.runsatara.com/register2" CVScreenId="083f1b59-cb6d-4757-8308-37c3bb4f165f" ContentHash="BRnE6pzgVUWYgp3L8J2rkw" CvElementArea="894, 529, 148, 52" CvTextArea="934, 545, 52, 18" CvTextArgument="XXXX" CvType="Button" DesignTimeRectangle="897, 532, 142, 47" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='root' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="42fc6726-eda7-4783-a9d8-0d2e7f917599" InformativeScreenshot="74efdf711eddb24f9a6fa61425e0a88b.png" Reference="MxNu6IYXQEiXuntZkOyw8A/Szxojjqw1U6WH9-NxRKVhg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="083f1b59-cb6d-4757-8308-37c3bb4f165f" CvTextArea="786, 500, 257, 18" CvTextArgument="Your AADHAAR Card number (12 Digits):" CvType="Text" DesignTimeRectangle="744, 497, 343, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='MobileUserRegistrationDemographicPage_label1__koLEC' isleaf='1' parentid='root' tag='DIV' aaname='Your AADHAAR Card number (12 Digits):' matching:class='fuzzy' fuzzylevel:class='0.0' matching:isleaf='fuzzy' fuzzylevel:isleaf='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Your AADHAAR Card number (12 Digits):' /&gt;" Guid="0253a76e-bb9c-416b-bd6e-6579b9f0d011" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NTypeInto>
+                <utat:RandomNumber Decimals="{x:Null}" DisplayName="Random Aadhar Last Four Digit" sap:VirtualizedContainerService.HintSize="416,229.33333333333334" sap2010:WorkflowViewState.IdRef="RandomNumber_8" Max="9999" Min="1000" Output="[AadhaarLastFourDigit]" />
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Aadhaar Last Four Digit" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_23" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Text="[AadhaarLastFourDigit.ToString]" Version="V5">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="dev1.register.runsatara.com/register2" CVScreenId="083f1b59-cb6d-4757-8308-37c3bb4f165f" ContentHash="ScZTRy-kk0qh08B_tbj15A" CvElementArea="1048, 529, 146, 52" CvTextArea="1087, 545, 52, 18" CvTextArgument="XXXX" CvType="Button" DesignTimeRectangle="1051, 532, 141, 47" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='7' parentid='root' tag='DIV' /&gt;" Guid="f1a213b3-e1e8-40af-bdd1-71f5dc9173aa" InformativeScreenshot="aa52f1b93ae4fb604cb5015df6b5ba58.png" Reference="MxNu6IYXQEiXuntZkOyw8A/sEJK7lqkREqsyXSJwfAo9w" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="083f1b59-cb6d-4757-8308-37c3bb4f165f" CvTextArea="786, 500, 257, 18" CvTextArgument="Your AADHAAR Card number (12 Digits):" CvType="Text" DesignTimeRectangle="744, 497, 343, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='MobileUserRegistrationDemographicPage_label1__koLEC' isleaf='1' parentid='root' tag='DIV' aaname='Your AADHAAR Card number (12 Digits):' matching:class='fuzzy' fuzzylevel:class='0.0' matching:isleaf='fuzzy' fuzzylevel:isleaf='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Your AADHAAR Card number (12 Digits):' /&gt;" Guid="e6e62c79-b73e-4644-b18a-0961ef214648" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NTypeInto>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Verify ID &amp; Address" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_18" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="dev1.register.runsatara.com/register2" CVScreenId="7024aca8-77e6-43a3-9968-ccc45b16f429" ContentHash="yKOVbaEqukmUuEnseihTCA" CvElementArea="24, 872, 1883, 64" CvTextArea="866, 895, 169, 22" CvTextArgument="Verify ID &amp; Address" CvType="Button" DesignTimeRectangle="29, 874, 1880, 60" DesignTimeScaleFactor="1.25" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Verify ID &amp;amp; Address' tag='BUTTON' type='' class='MobileUserRegistrationDemographicPage_label__t5R4t' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Verify ID &amp;amp; Address' /&gt;" Guid="63877b82-e66c-4930-8a34-d4f031fa166f" InformativeScreenshot="c4ad7ad06c9ef26fde1220e663752bed.png" Reference="MxNu6IYXQEiXuntZkOyw8A/oNp8Cs_SS0ahB1RTvyO1EQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="7024aca8-77e6-43a3-9968-ccc45b16f429" CvElementArea="24, 872, 1883, 64" CvTextArea="866, 895, 169, 22" CvTextArgument="Verify ID &amp; Address" CvType="Button" DesignTimeRectangle="868, 889, 166, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Verify ID &amp;amp; Address' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Verify ID &amp;amp; Address' /&gt;" Guid="93b59bcb-9842-4601-8194-f33828bc8313" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type OTP" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_24" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Text="123456" Version="V5">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="dev1.register.runsatara.com/register2" CVScreenId="b99f18ed-b943-4779-a072-2bc7c5fc2215" ContentHash="W9hACvVeHUmbUal0PfuOhg" CvTextArea="917, 596, 82, 18" CvTextArgument="XXXXXX" CvType="Text" DesignTimeRectangle="69, 579, 1800, 55" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='root' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="3670d49b-3981-4606-b48c-b224aaab051d" InformativeScreenshot="9169c28ead12e8aaa34f48a3fdc80946.png" IsResponsive="True" Reference="MxNu6IYXQEiXuntZkOyw8A/bvBWNCAL80qBmtxN4uqf_Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="b99f18ed-b943-4779-a072-2bc7c5fc2215" CvTextArea="924, 549, 88, 17" CvTextArgument="Enter OTP" CvType="Text" DesignTimeRectangle="69, 545, 1800, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='STRONG' class='' aaname='Enter OTP' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Enter OTP' /&gt;" Guid="5bff991e-b7de-4f2c-b1e8-a9f0b196e15f" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                  <uix:NTypeInto.VerifyOptions>
+                    <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                      <uix:VerifyExecutionTypeIntoOptions.Retry>
+                        <InArgument x:TypeArguments="x:Boolean" />
+                      </uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        <InArgument x:TypeArguments="x:Double" />
+                      </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                    </uix:VerifyExecutionTypeIntoOptions>
+                  </uix:NTypeInto.VerifyOptions>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NTypeInto>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Verify OTP" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,186" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="dev1.register.runsatara.com/register2" CVScreenId="ee874635-20b7-442b-8b6e-db255e269603" ContentHash="GQ5XgQceiUWhTQJ6ThjifQ" CvTextArea="926, 694, 84, 20" CvTextArgument="Verify OTP" CvType="Text" DesignTimeRectangle="69, 679, 1800, 46" DesignTimeScaleFactor="1.25" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aaname='Verify OTP' tag='BUTTON' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Verify OTP' /&gt;" Guid="12697e68-f734-4c10-a0e4-29a4c1ebc82b" InformativeScreenshot="962411e827b3028d7a33c8eb8cd5e556.png" Reference="MxNu6IYXQEiXuntZkOyw8A/zKQwC_kzS0C1nR0KRAA8tQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="ee874635-20b7-442b-8b6e-db255e269603" CvTextArea="926, 694, 84, 20" CvTextArgument="Verify OTP" CvType="Text" DesignTimeRectangle="928, 692, 82, 21" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Verify OTP' parentid='root' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Verify OTP' /&gt;" Guid="cd976c6c-c88f-49b2-8b4a-356d3a03b3d8" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+              </Sequence>
+              <Sequence DisplayName="Aadhaar Verification Screen" sap:VirtualizedContainerService.HintSize="486,803.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Name="AadhaarVerifiedMessage" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:RetryScope DisplayName="Retry Scope | To Validate Aadhar is Verified" sap:VirtualizedContainerService.HintSize="452,401.3333333333333" sap2010:WorkflowViewState.IdRef="RetryScope_2" LogRetriedExceptions="True" NumberOfRetries="3" RetriedExceptionsLogLevel="Warn" RetryInterval="00:00:03">
+                  <ui:RetryScope.ActivityBody>
+                    <ActivityAction>
+                      <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="450,194" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <uix:NGetText DisplayName="Get Text &quot;Your Aadhaar Card is verified.&quot;" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,134" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" ScrapingOptions="None" TextString="[AadhaarVerifiedMessage]" Version="V5">
+                          <uix:NGetText.Target>
+                            <uix:TargetAnchorable BrowserURL="dev1.register.runsatara.com/verificationComplete" CVScreenId="160babe6-0519-41e7-a022-10ad25b5114b" ContentHash="OlGVZBhIq0mkqY3WIH9tAg" CvType="AnyWordGroup" DesignTimeRectangle="792, 254, 400, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='root' tag='DIV' type='' class='AadhaarVerificationComplete_verificationText__9CrYq' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="87b74aac-0cf7-4ab8-b42b-a67a99cd292d" InformativeScreenshot="f0aef7e16ea974b406680ca12c57e603.png" Reference="MxNu6IYXQEiXuntZkOyw8A/hqoh6qBYSUed2zs1zuIZwA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                              <uix:TargetAnchorable.Anchors>
+                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                  <uix:Target CVScreenId="160babe6-0519-41e7-a022-10ad25b5114b" CvTextArea="743, 131, 174, 28" CvTextArgument="Details Updated!" CvType="Text" DesignTimeRectangle="744, 127, 448, 32" FuzzySelectorArgument="&lt;webctrl tag='B' type='' class='AadhaarVerificationComplete_heading__PUR4S' aaname='Details Updated!' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Details Updated!' /&gt;" Guid="b8293167-45ee-491c-898f-b27fb4c7d4fb" SearchSteps="FuzzySelector, CV" />
+                                </scg:List>
+                              </uix:TargetAnchorable.Anchors>
+                            </uix:TargetAnchorable>
+                          </uix:NGetText.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NGetText>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:RetryScope.ActivityBody>
+                  <ui:RetryScope.Condition>
+                    <ActivityFunc x:TypeArguments="x:Boolean" />
+                  </ui:RetryScope.Condition>
+                </ui:RetryScope>
+                <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Validate Aadhar card is Verified" Expression="[AadhaarVerifiedMessage=&quot;Your Aadhaar Card is verified.&quot;]" sap:VirtualizedContainerService.HintSize="452,124" sap2010:WorkflowViewState.IdRef="VerifyExpression_4" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uta:VerifyExpression>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click on Save &amp; Continue" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,186" sap2010:WorkflowViewState.IdRef="NClick_21" InteractionMode="DebuggerApi" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="dev1.register.runsatara.com/verificationComplete" CVScreenId="582042de-6f87-4c93-bc5a-079943d7aa01" ContentHash="YykwXOrSrEu3c3utDweLbw" CvElementArea="25, 793, 1879, 66" CvTextArea="880, 817, 140, 17" CvTextArgument="Save &amp; Continue" CvType="Button" DesignTimeRectangle="29, 796, 1880, 60" DesignTimeScaleFactor="1.25" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='AadhaarVerificationComplete_label__MfA1O' aaname='Save &amp;amp; Continue' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Save &amp;amp; Continue' /&gt;" Guid="f21fc27b-247c-4718-a800-a551337db08b" InformativeScreenshot="349ad91e9497d2d91fc6629611b18781.png" Reference="MxNu6IYXQEiXuntZkOyw8A/7UQKbm240U-90V0UFPYsVw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="582042de-6f87-4c93-bc5a-079943d7aa01" CvElementArea="25, 793, 1879, 66" CvTextArea="880, 817, 140, 17" CvTextArgument="Save &amp; Continue" CvType="Button" DesignTimeRectangle="882, 811, 138, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='' aaname='Save &amp;amp; Continue' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Save &amp;amp; Continue' /&gt;" Guid="68417735-7034-4e24-af22-8ba41039f349" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </uix:NClick>
+              </Sequence>
+              <uix:NTakeScreenshot DisplayName="Take Screenshot" FileName="screenshot.png" FileNameMode="None" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,271.3333333333333" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_2" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5" />
+            </Sequence>
+            <Sequence DisplayName="Verify Account Created" sap:VirtualizedContainerService.HintSize="520.6666666666666,57.333333333333336" sap2010:WorkflowViewState.IdRef="Sequence_16">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="AccountCreatedMessage" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NGetText DisplayName="Get Text 'Your account is created!'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" TextString="[AccountCreatedMessage]" Version="V5">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="dev1.register.runsatara.com/success" CVScreenId="631549f6-17ce-44b8-8ab6-0cfe239df3be" ContentHash="pM6-9qH9XUyTBjCHWpa1hg" CvType="AnyWordGroup" DesignTimeRectangle="744, 323, 448, 32" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='B' /&gt;" Guid="ac7c7743-0949-4058-b90b-907a09c3305f" InformativeScreenshot="7f00aaeb8a822c09d55d6c396668a13d.png" Reference="MxNu6IYXQEiXuntZkOyw8A/rBEsHhqYHUSfIkdshAwBYA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="631549f6-17ce-44b8-8ab6-0cfe239df3be" CvTextArea="898, 369, 139, 18" CvTextArgument="#RunSatara ID (RSID)" CvType="Text" DesignTimeRectangle="744, 369, 448, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='RegistrationSuccess_label__bAjay' parentid='root' tag='DIV' type='' aaname='#RunSatara ID (RSID)' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='#RunSatara ID (RSID)' /&gt;" Guid="eebaa931-ff65-4ade-bf31-7aed3b5992a6" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Validate Account is Created" Expression="[AccountCreatedMessage=&quot;Your account is created!&quot;]" sap:VirtualizedContainerService.HintSize="416,114.66666666666667" sap2010:WorkflowViewState.IdRef="VerifyExpression_3" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True" />
+            </Sequence>
+            <Sequence DisplayName="Complete User Profile" sap:VirtualizedContainerService.HintSize="520.6666666666666,4571.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_19">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Complete my profile'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.6666666666667,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_20" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/success" ContentHash="w_EZGSwCL06F19sgEn1soQ" DesignTimeRectangle="635, 929, 624, 66" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='RegistrationSuccess_label__bAjay' aaname='Complete my profile' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Complete my profile' /&gt;" Guid="220ca508-d2d8-45a5-9bdf-59bc84fd19d6" InformativeScreenshot="528da6651dbb8592cc6013bc29787c6c.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/GG3UARZNREC_1k3Zj_WjRA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="817, 950, 217, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Complete my profile' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Complete my profile' /&gt;" Guid="74847825-3407-4297-b228-b146db61bc79" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486.6666666666667,410.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,298.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Feet'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,238.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_25" InteractionMode="SameAsCard" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Text="5" Version="V5">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/physicalProfileInfo" ContentHash="8sgV26hviEe_eOu5mOmLrw" DesignTimeRectangle="624, 702, 324, 84" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='root' tag='DIV' /&gt;" Guid="e90b5877-0cc0-439d-961c-0946dd53d6f5" InformativeScreenshot="a6e560162c89c97bff7cff32cfe9cb82.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/EJC-eZAshEi6UuK5vpt_Xg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486.6666666666667,410.6666666666667" sap2010:WorkflowViewState.IdRef="CommentOut_4">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,298.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_29">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Inches'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,238.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_26" InteractionMode="SameAsCard" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Text="3" Version="V5">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/physicalProfileInfo" ContentHash="R4j2ZRIZpEGAEJ2vq1aoIw" DesignTimeRectangle="972, 702, 324, 84" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' parentid='root' tag='DIV' /&gt;" Guid="9a309703-4fd2-4192-95b1-832bd1d92387" InformativeScreenshot="bc24be191a9c7673836d234fcacdb278.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/OT6R8BFOXEqWOflbEP_vDQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486.6666666666667,137.33333333333334" sap2010:WorkflowViewState.IdRef="CommentOut_5">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,25.333333333333332" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Your Weight (in KG)'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,248" sap2010:WorkflowViewState.IdRef="NTypeInto_27" InteractionMode="SameAsCard" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Text="46" Version="V5">
+                      <uix:NTypeInto.Target>
+                        <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/physicalProfileInfo" ContentHash="fLDuF28KvEecby3aCvbitg" DesignTimeRectangle="624, 852, 672, 84" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='root' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="88dc89cb-c721-4ead-9368-21702371dad3" InformativeScreenshot="a9312aab781f3f29903b99fa39539085.jpg" IsResponsive="True" Reference="MxNu6IYXQEiXuntZkOyw8A/sEi1In3UNkiKOuFIaSuZRA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target DesignTimeRectangle="624, 821, 209, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Your Weight (in KG) ' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Your Weight (in KG)' /&gt;" Guid="d7bee30d-4e95-4547-a2bc-ac4b2dac97d7" SearchSteps="FuzzySelector" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NTypeInto.Target>
+                      <uix:NTypeInto.VerifyOptions>
+                        <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                          <uix:VerifyExecutionTypeIntoOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionTypeIntoOptions.Retry>
+                          <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                        </uix:VerifyExecutionTypeIntoOptions>
+                      </uix:NTypeInto.VerifyOptions>
+                    </uix:NTypeInto>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'No'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_24" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/medicalProfileInfo" CVScreenId="be94592d-033f-4c74-8c62-088c4b80da8e" ContentHash="0t5gYtGD_U2SBDKOFzJNPA" CvTextArea="780, 594, 34, 24" CvTextArgument="No" CvType="Text" DesignTimeRectangle="763, 567, 108, 75" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='4' parentid='root' tag='DIV' /&gt;" Guid="30b5d84e-beea-4b16-b06f-82c1879a32c5" InformativeScreenshot="0c55faa65bbbcea8c53f156ee0c17d71.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/yTUVHstULEOyf0IIO1gMpA" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'No(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,186" sap2010:WorkflowViewState.IdRef="NClick_25" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/medicalProfileInfo" ContentHash="IO39lAzC5kuC25wZS1_rAw" DesignTimeRectangle="763, 411, 108, 75" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='MedicalInformationProfilePage_radioframe__YAQ87' idx='4' parentid='root' tag='DIV' /&gt;" Guid="3dde22b0-28b3-405c-91a7-61100e6c3a4d" InformativeScreenshot="ae78989f978b548112a5abd8f789acf7.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/6gSw3I0Ff0yueQTeLaG0Jw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </ui:CommentOut.Body>
+              </ui:CommentOut>
+              <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.6666666666667,318.6666666666667" sap2010:WorkflowViewState.IdRef="NMouseScroll_5" InteractionMode="HardwareEvents" MovementUnits="5" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NMouseScroll.SearchedElement>
+                  <uix:SearchedElement>
+                    <uix:SearchedElement.InUiElement>
+                      <InArgument x:TypeArguments="ui:UiElement" />
+                    </uix:SearchedElement.InUiElement>
+                    <uix:SearchedElement.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement" />
+                    </uix:SearchedElement.OutUiElement>
+                    <uix:SearchedElement.Target>
+                      <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/physicalProfileInfo" ContentHash="cZt734szUEu7dHLP0OD-Fg" DesignTimeRectangle="11, 225, 1897, 1185" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='root' tag='DIV' /&gt;" Guid="bdf62aa0-db00-49d6-9216-35cf8c488bcd" InformativeScreenshot="67d42352bdae62c2e0b0924f0568b102.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/FdZ9gua7l0Oa13rUVtuxyw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:SearchedElement.Target>
+                    <uix:SearchedElement.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:SearchedElement.Timeout>
+                  </uix:SearchedElement>
+                </uix:NMouseScroll.SearchedElement>
+              </uix:NMouseScroll>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'B+'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.6666666666667,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_22" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/physicalProfileInfo" ContentHash="7naXj1HuH0qrx12FVSawuw" DesignTimeRectangle="741, 629, 94, 75" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='PhysicalProfilePage_radioframe__qR77-' idx='2' parentid='root' tag='DIV' /&gt;" Guid="0992c361-1bcb-45a1-9e8f-4bbcb4e57495" InformativeScreenshot="d703e278a566b50392aa6cb8bc0e89c7.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/Bx_uUjqkA0q58a8E481Edg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll 'Your Weight (in KG)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.6666666666667,390.6666666666667" sap2010:WorkflowViewState.IdRef="NMouseScroll_9" InteractionMode="HardwareEvents" MovementUnits="2" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NMouseScroll.SearchedElement>
+                  <uix:SearchedElement>
+                    <uix:SearchedElement.InUiElement>
+                      <InArgument x:TypeArguments="ui:UiElement" />
+                    </uix:SearchedElement.InUiElement>
+                    <uix:SearchedElement.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement" />
+                    </uix:SearchedElement.OutUiElement>
+                    <uix:SearchedElement.Target>
+                      <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/physicalProfileInfo" CVScreenId="1441bd13-ab63-49fc-8a35-678eec0edffa" ContentHash="eVpMjyzTekKd1BQc8ouRew" CvElementArea="622, 842, 676, 71" CvTextArea="791, 864, 292, 26" CvTextArgument="Next - Medical Information" CvType="Button" DesignTimeRectangle="624, 845, 672, 66" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='13' tag='BUTTON' type='' class='PhysicalProfilePage_label__GWtbr' aaname='Next - Medical Information' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Next - Medical Information' /&gt;" Guid="7cf582b4-027d-49c4-8185-09ab309bf15a" InformativeScreenshot="5f4e753253e8a8f572c27214540740ec.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/bQsKFtdmQ0mQgKPfZcAQXw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                            <uix:Target CVScreenId="1441bd13-ab63-49fc-8a35-678eec0edffa" CvElementArea="622, 842, 676, 71" CvTextArea="791, 864, 292, 26" CvTextArgument="Next - Medical Information" CvType="Button" DesignTimeRectangle="794, 863, 288, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='13' tag='SPAN' type='' class='' aaname='Next - Medical Information' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Next - Medical Information' /&gt;" Guid="c20c623f-5ca6-41c6-9fab-86683127ffda" SearchSteps="FuzzySelector, CV" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:SearchedElement.Target>
+                    <uix:SearchedElement.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:SearchedElement.Timeout>
+                  </uix:SearchedElement>
+                </uix:NMouseScroll.SearchedElement>
+                <uix:NMouseScroll.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/physicalProfileInfo" ContentHash="eHu9ikkL4EefiRGPgQ7XNw" DesignTimeRectangle="624, 461, 672, 84" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='root' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="c6a4c44c-a7e5-492a-82c0-18ca11826016" InformativeScreenshot="a9312aab781f3f29903b99fa39539085.jpg" IsResponsive="True" Reference="MxNu6IYXQEiXuntZkOyw8A/-4PvEjbOjEyZK_t43b6s2A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="624, 430, 209, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Your Weight (in KG) ' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Your Weight (in KG)' /&gt;" Guid="25c4c60b-e159-46a6-9530-30b3ba44b733" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NMouseScroll.Target>
+              </uix:NMouseScroll>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next - Medical Informat…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.6666666666667,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_23" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/physicalProfileInfo" ContentHash="ZulfWamC4UuuzYvvNsrCyw" DesignTimeRectangle="624, 845, 672, 66" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='13' tag='BUTTON' type='' class='PhysicalProfilePage_label__GWtbr' aaname='Next - Medical Information' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Next - Medical Information' /&gt;" Guid="0b42cb3a-8938-4125-8cf2-ceebc5e1737d" InformativeScreenshot="5f4e753253e8a8f572c27214540740ec.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/PLHhv--oykChKQVGQq7w7Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="794, 863, 288, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='13' tag='SPAN' type='' class='' aaname='Next - Medical Information' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Next - Medical Information' /&gt;" Guid="77f9c7f4-2c08-4a2d-97e4-4010f758582b" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'No(4)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.6666666666667,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_47" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/medicalProfileInfo" ContentHash="FJowLfbwREW-R_VhEr58Ng" DesignTimeRectangle="763, 483, 108, 75" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='MedicalInformationProfilePage_radioframe__YAQ87' idx='2' parentid='root' tag='DIV' /&gt;" Guid="f3a791cc-a10a-4398-9814-967df141f1f2" InformativeScreenshot="913922b1dee22dbe9156bbc60e259506.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/nBm2gLbTh0yiZIV8oEMXdg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.6666666666667,318.6666666666667" sap2010:WorkflowViewState.IdRef="NMouseScroll_8" InteractionMode="HardwareEvents" MovementUnits="5" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NMouseScroll.SearchedElement>
+                  <uix:SearchedElement>
+                    <uix:SearchedElement.InUiElement>
+                      <InArgument x:TypeArguments="ui:UiElement" />
+                    </uix:SearchedElement.InUiElement>
+                    <uix:SearchedElement.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement" />
+                    </uix:SearchedElement.OutUiElement>
+                    <uix:SearchedElement.Target>
+                      <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/medicalProfileInfo" ContentHash="HIEYFt_wMEGIJJfkIkwJNQ" DesignTimeRectangle="11, 276, 1897, 1691" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='root' tag='DIV' /&gt;" Guid="984b8af9-0734-4201-b932-37674770881e" InformativeScreenshot="bc9b3dbf4c0a51e4724c2167361dc9bc.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/gEkvIGqTd0-l7La_C4CcAw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:SearchedElement.Target>
+                    <uix:SearchedElement.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:SearchedElement.Timeout>
+                  </uix:SearchedElement>
+                </uix:NMouseScroll.SearchedElement>
+              </uix:NMouseScroll>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'No(5)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.6666666666667,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_49" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/medicalProfileInfo" CVScreenId="57e2b63c-706a-4d25-b895-b89cb6a246f2" ContentHash="FhnWTKJsvkOi_jcEtSxu0A" CvTextArea="780, 659, 34, 24" CvTextArgument="No" CvType="Text" DesignTimeRectangle="763, 632, 108, 75" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='MedicalInformationProfilePage_radioframe__YAQ87' idx='3' parentid='root' tag='DIV' /&gt;" Guid="475a2e6a-14be-4ff3-9114-1da84f7255cf" InformativeScreenshot="ef5513761e63e95d5e679533dba99b8f.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/8RcsJxeKKUGocnutxWw0Mw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'No(6)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.6666666666667,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_50" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/medicalProfileInfo" ContentHash="5dM73qrMBkinCUyvl1P5kA" DesignTimeRectangle="763, 545, 108, 75" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='MedicalInformationProfilePage_radioframe__YAQ87' idx='4' parentid='root' tag='DIV' /&gt;" Guid="42d7c7cb-3928-4745-94d9-ee29599ab744" InformativeScreenshot="2743764631a90b7597a67b9cefc60e73.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/x17rR85lS0-k7Dn-8MFk6Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'No(7)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.6666666666667,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_48" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/medicalProfileInfo" CVScreenId="e16982a8-09ce-41cb-b630-5fd6c6197604" ContentHash="yj_hlry2HkGR24Yb28bFxg" CvTextArea="780, 761, 34, 24" CvTextArgument="No" CvType="Text" DesignTimeRectangle="763, 734, 108, 75" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl class='MedicalInformationProfilePage_radioframe__YAQ87' idx='5' parentid='root' tag='DIV' /&gt;" Guid="b0cf480a-ae61-41f5-a0be-80bf8a027045" InformativeScreenshot="3b0e6458861dac474b518b4dbfdbbdd3.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/uInj_cz2tU6YwqeoNWqvzQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next - Emergency Contact'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.6666666666667,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_31" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/medicalProfileInfo" ContentHash="UClQnOQs-Eqb6_a11ROdZg" DesignTimeRectangle="624, 845, 624, 66" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='12' tag='BUTTON' type='' class='MedicalInformationProfilePage_label__aZp62' aaname='Next - Emergency Contact' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Next - Emergency Contact' /&gt;" Guid="3a44fcc0-edd9-4c3c-9997-3ef045211f1f" InformativeScreenshot="c7be859102013a2e4cb97c5e35c6543c.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/Mp9IcOFv4kuh4hWGMP2Qiw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="773, 863, 281, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='12' tag='SPAN' type='' class='' aaname='Next - Emergency Contact' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Next - Emergency Contact' /&gt;" Guid="0e363e81-9840-4d33-90c6-13b724123799" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Emergency Contact 1 *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.6666666666667,248" sap2010:WorkflowViewState.IdRef="NTypeInto_29" InteractionMode="SameAsCard" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Text="9834972095" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/emergencyProfileInfo" CVScreenId="83264736-bd7f-4c01-8a8c-690d88aec09b" ContentHash="LlM7Kcnz8EG9MfA2qlcZ9A" CvElementArea="624, 657, 672, 77" CvType="InputBox" DesignTimeRectangle="624, 659, 672, 74" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='root' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="df95b661-c1b6-42c0-9eff-5e098e641345" InformativeScreenshot="ad65bd296c0966fd45fad6215088acbd.jpg" IsResponsive="True" Reference="MxNu6IYXQEiXuntZkOyw8A/nPh9pyG4iEGVBYqGB8M7Sw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="83264736-bd7f-4c01-8a8c-690d88aec09b" CvTextArea="621, 620, 251, 29" CvTextArgument="Emergency Contact 1 *" CvType="Text" DesignTimeRectangle="624, 618, 672, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='STRONG' type='' class='' aaname='Emergency Contact 1' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Emergency Contact 1 *' /&gt;" Guid="acdb67df-2010-4803-aff6-609a511521f3" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Contact Name *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.6666666666667,248" sap2010:WorkflowViewState.IdRef="NTypeInto_30" InteractionMode="SameAsCard" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Text="Mahesh" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/emergencyProfileInfo" CVScreenId="83264736-bd7f-4c01-8a8c-690d88aec09b" ContentHash="meUQTQu9ok-JPYITAfqDpw" CvElementArea="623, 821, 673, 69" CvType="InputBox" DesignTimeRectangle="624, 822, 672, 66" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='root' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ed17353e-a674-43ad-98bf-a65f066b7071" InformativeScreenshot="4fad81234b5ccf3569f0b666b582c593.jpg" IsResponsive="True" Reference="MxNu6IYXQEiXuntZkOyw8A/E9MbWox7F0qWSdqE47tj7A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="83264736-bd7f-4c01-8a8c-690d88aec09b" CvTextArea="621, 783, 174, 24" CvTextArgument="Contact Name *" CvType="Text" DesignTimeRectangle="624, 781, 672, 29" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='' tag='STRONG' aaname='Contact Name' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Contact Name *' /&gt;" Guid="d51069f9-7fc9-4599-9638-8241863697be" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Relation with you? *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.6666666666667,248" sap2010:WorkflowViewState.IdRef="NTypeInto_31" InteractionMode="SameAsCard" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Text="Friend" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/emergencyProfileInfo" CVScreenId="f60d9e6b-681b-4f61-9f54-a3f3cef78495" ContentHash="4JtRd4-KGEad4ITvBo-SWg" CvElementArea="625, 384, 671, 69" CvType="InputBox" DesignTimeRectangle="624, 385, 672, 66" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl type='' class='' parentid='root' tag='DIV' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="ba819ee4-dd2a-47aa-9e19-834e3c293d51" InformativeScreenshot="b4d4baed0e2c9f8ce659968d974e593e.jpg" IsResponsive="True" Reference="MxNu6IYXQEiXuntZkOyw8A/mTVYW61Pmk-z0HP5tw3a7Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="f60d9e6b-681b-4f61-9f54-a3f3cef78495" CvTextArea="621, 347, 219, 24" CvTextArgument="Relation with you? *" CvType="Text" DesignTimeRectangle="624, 345, 672, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='' tag='STRONG' aaname='Relation with you?' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Relation with you? *' /&gt;" Guid="c803212e-c53b-402f-a4a3-440f2fd7e702" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Save &amp; Proceed to Verif…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486.6666666666667,186" sap2010:WorkflowViewState.IdRef="NClick_32" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/emergencyProfileInfo" CVScreenId="abed79f2-3df6-40f1-9ef8-74fe97cddb35" ContentHash="l7VhqQZSiEm-jmUp7qh_5A" CvElementArea="621, 842, 630, 71" CvTextArea="747, 864, 332, 26" CvTextArgument="Save &amp; Proceed to Verification" CvType="Button" DesignTimeRectangle="624, 845, 624, 66" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='8' tag='BUTTON' type='' class='EmergencyContactProfilePage_label__HKpuQ' aaname='Save &amp;amp; Proceed to Verification' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Save &amp;amp; Proceed to Verification' /&gt;" Guid="6428a78f-7454-4b26-a8b4-66fd9b6c6ffa" InformativeScreenshot="a5fc3d25ffa611b77f5546bc745a54fe.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/3tfy8Hh-v0mHprG3Z6jwDg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="abed79f2-3df6-40f1-9ef8-74fe97cddb35" CvElementArea="621, 842, 630, 71" CvTextArea="747, 864, 332, 26" CvTextArgument="Save &amp; Proceed to Verification" CvType="Button" DesignTimeRectangle="750, 863, 327, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='8' tag='SPAN' type='' class='' aaname='Save &amp;amp; Proceed to Verification' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Save &amp;amp; Proceed to Verification' /&gt;" Guid="8e337cf4-6d06-40ad-b7cd-727b54e7e5c9" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+            <Sequence DisplayName="Registration Step 1" sap:VirtualizedContainerService.HintSize="520.6666666666666,3331.3333333333335" sap2010:WorkflowViewState.IdRef="Sequence_31">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="RegStepone" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Registration STEP 1'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_33" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/kycVerified" ContentHash="XyXFy_3fcEKTd8h4EEIAqQ" DesignTimeRectangle="624, 929, 624, 66" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='1' tag='BUTTON' type='' class='ProfileVerificationComplete_button1__NLGAk' aaname='Registration STEP 1' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Registration STEP 1' /&gt;" Guid="3b49e991-d8e1-4478-8894-d040aa3b7b57" InformativeScreenshot="20c03f98c04a37a0980343de82e87e6b.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/Cs9ljJVpIEqgNvmY4bQLDQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="806, 946, 216, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='1' tag='SPAN' type='' class='' aaname='Registration STEP 1' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Registration STEP 1' /&gt;" Guid="09cd99c4-7290-47d8-b2df-eea5075f4425" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,318.6666666666667" sap2010:WorkflowViewState.IdRef="NMouseScroll_6" InteractionMode="HardwareEvents" MovementUnits="10" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NMouseScroll.SearchedElement>
+                  <uix:SearchedElement>
+                    <uix:SearchedElement.InUiElement>
+                      <InArgument x:TypeArguments="ui:UiElement" />
+                    </uix:SearchedElement.InUiElement>
+                    <uix:SearchedElement.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement" />
+                    </uix:SearchedElement.OutUiElement>
+                    <uix:SearchedElement.Target>
+                      <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/terms" ContentHash="7iJPlymEakWYLJT3hAOkIg" DesignTimeRectangle="11, 225, 1897, 4978" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='root' tag='DIV' /&gt;" Guid="0833b9e6-71fa-43bb-9d31-606ff5f68354" InformativeScreenshot="6f5afedd8ff2233ef3d43ee687761310.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/WqCI1tKDdkScX8ejhuEzEw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:SearchedElement.Target>
+                    <uix:SearchedElement.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:SearchedElement.Timeout>
+                  </uix:SearchedElement>
+                </uix:NMouseScroll.SearchedElement>
+              </uix:NMouseScroll>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_34" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/terms" CVScreenId="fa122ce7-2c0e-4c59-b795-47f35f6e0479" ContentHash="ADBqWwlJGUWZ1MqqDJC5VA" CvElementArea="621, 808, 32, 32" CvType="CheckBox" DesignTimeRectangle="624, 810, 27, 28" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' isleaf='1' parentid='root' tag='DIV' /&gt;" Guid="8353f453-703b-4141-a026-f68df7d9ba69" InformativeScreenshot="c749682c27fc950499f7bd9755c6c2b6.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/IPinzMfDBUy6Z0RkgYWijg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Accept Terms &amp; Continue'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_35" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/terms" CVScreenId="fa122ce7-2c0e-4c59-b795-47f35f6e0479" ContentHash="Lkq3cs-CfUaWcMngV40OSQ" CvElementArea="624, 901, 672, 71" CvTextArea="797, 924, 279, 30" CvTextArgument="Accept Terms &amp; Continue" CvType="Button" DesignTimeRectangle="624, 903, 672, 68" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='2' tag='BUTTON' type='' class='' aaname='Accept Terms &amp;amp; Continue' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Accept Terms &amp;amp; Continue' /&gt;" Guid="b468fb92-f0d7-4484-b836-c670c8f8184e" InformativeScreenshot="6f6456785fe637401b7806319f9a3178.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/Q2SMNLjdv0qvcQEJW17o5g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="fa122ce7-2c0e-4c59-b795-47f35f6e0479" CvElementArea="624, 901, 672, 71" CvTextArea="797, 924, 279, 30" CvTextArgument="Accept Terms &amp; Continue" CvType="Button" DesignTimeRectangle="801, 921, 273, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='2' tag='SPAN' type='' class='' aaname='Accept Terms &amp;amp; Continue' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Accept Terms &amp;amp; Continue' /&gt;" Guid="2ca78ea9-5b4b-4999-a0bb-4d45aa6a9342" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'What club are you runni…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_36" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/runnerClub" CVScreenId="cca921bf-e989-4fab-992e-92a8b2b843b5" ContentHash="QvbTwgUlX0-gWatuz7GPqQ" CvElementArea="624, 495, 673, 75" CvType="InputBox" DesignTimeRectangle="624, 496, 672, 72" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl aria-role='combobox' tag='DIV' type='' class='' aaname='' matching:aria-role='fuzzy' fuzzylevel:aria-role='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="77d847dd-7aa9-4acc-abf5-b6f11dc6cb35" InformativeScreenshot="c6cb79272c789ac3ca30c6805b6493df.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/wREX9CeC6kSDLnztywGhYg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="cca921bf-e989-4fab-992e-92a8b2b843b5" CvTextArea="620, 461, 307, 21" CvTextArgument="What club are you running for? *" CvType="Text" DesignTimeRectangle="624, 459, 672, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='What club are you running for?' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='What club are you running for? *' /&gt;" Guid="9103773c-4e64-47cb-a55e-f4982494a980" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'I am running Solo'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_37" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/runnerClub" CVScreenId="bb1ec879-2544-4631-9a10-606da14b1d50" ContentHash="Llu7Xo5aekCUavmyNva9UA" CvTextArea="639, 663, 170, 21" CvTextArgument="I am running Solo" CvType="Text" DesignTimeRectangle="625, 647, 655, 52" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aria-role='option' tag='DIV' /&gt;" Guid="e16099f8-a316-42f9-923e-2be7e2430a6b" InformativeScreenshot="54285102359d300408af4d0f77d13057.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/LC-I4geqcUuXRudLqRMJgg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next - Line-Up Qualific…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_38" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/runnerClub" ContentHash="eRrRQ_41vECnn2YMGczl1g" DesignTimeRectangle="624, 855, 672, 68" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='2' tag='BUTTON' type='' class='' aaname='Next - Line-Up Qualification' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Next - Line-Up Qualification' /&gt;" Guid="e8daeb71-8b0d-4d11-aad7-210ce1056187" InformativeScreenshot="ab816a409dcaade21fb48cba76163f5a.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/AYePH8eMbEmlXF7u9qY3TQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="789, 873, 297, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='2' tag='SPAN' type='' class='' aaname='Next - Line-Up Qualification' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Next - Line-Up Qualification' /&gt;" Guid="b9134591-8285-4495-bada-c0e2e9dc0075" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next - T-Shirt Size'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_39" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/runnerProfileInfo" CVScreenId="3d8c280e-4f2e-486c-97f4-81155ec09056" ContentHash="cVCwdoQcLE2uUZfimuO-ew" CvElementArea="633, 842, 629, 70" CvTextArea="827, 864, 196, 25" CvTextArgument="Next - T-Shirt Size" CvType="Button" DesignTimeRectangle="635, 845, 624, 66" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='13' tag='BUTTON' type='' class='PastRunningExperienceProfilePage_label__zNK4r' aaname='Next - T-Shirt Size' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Next - T-Shirt Size' /&gt;" Guid="ece2f6b5-4e93-46c4-a3ba-c062576de490" InformativeScreenshot="3946edb28cc1fd59f13c0ba67c9ebd4b.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/quop-m51Q0SXShGkEhDScg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="3d8c280e-4f2e-486c-97f4-81155ec09056" CvElementArea="633, 842, 629, 70" CvTextArea="827, 864, 196, 25" CvTextArgument="Next - T-Shirt Size" CvType="Button" DesignTimeRectangle="829, 863, 193, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='13' tag='SPAN' type='' class='' aaname='Next - T-Shirt Size' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Next - T-Shirt Size' /&gt;" Guid="bb9f4689-8d56-4f4d-848b-d5b6e870f497" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Medium'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_40" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/selectGoodies" CVScreenId="5f089231-13af-4203-8487-197a62cd48b4" ContentHash="82NntFRj0ESKsmFGtzDlhA" CvTextArea="980, 647, 91, 25" CvTextArgument="Medium" CvType="Text" DesignTimeRectangle="963, 622, 165, 75" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='4' parentid='root' tag='DIV' /&gt;" Guid="671ad6f4-3c23-4cf5-b85a-5eda2df99e0e" InformativeScreenshot="cb75cca67c61092e4b199c4075ead70f.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/oAhpVoSaJkCKdi9kWRSMsQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'DIV(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_42" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/selectGoodies" CVScreenId="e0d28649-cc99-4337-822f-e94b9be53a99" ContentHash="ooEJviitXkavq-p4OmAfzA" CvElementArea="632, 672, 32, 32" CvType="CheckBox" DesignTimeRectangle="635, 674, 27, 28" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' isleaf='1' parentid='root' tag='DIV' /&gt;" Guid="3d793419-e589-469e-b50d-345269e7299b" InformativeScreenshot="b6446095dba12a43618a7fb12120a612.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/ayw9R4tq5EaDvez5t6Pv3g" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit &amp; Save'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_41" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/selectGoodies" ContentHash="aW7VFKNAFEqj1i8HfVfQZQ" DesignTimeRectangle="635, 839, 649, 66" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='8' tag='BUTTON' type='' class='GoodySelection_button1__RUIqv' aaname='Submit &amp;amp; Save' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Submit &amp;amp; Save' /&gt;" Guid="5dc3ca5e-d9a4-4b53-bb0c-f95c51a39699" InformativeScreenshot="7d87b1ae23e4bae93b1ec95081531668.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/4MMNrf6_hUWr05NcoiVdkQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="859, 856, 158, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='8' tag='SPAN' type='' class='' aaname='Submit &amp;amp; Save' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Submit &amp;amp; Save' /&gt;" Guid="90b17564-4dd8-4cf5-99b4-04a0459e0774" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NMouseScroll KeyModifiers="{x:Null}" Direction="Down" DisplayName="Mouse Scroll" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,318.6666666666667" sap2010:WorkflowViewState.IdRef="NMouseScroll_7" InteractionMode="HardwareEvents" MovementUnits="5" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NMouseScroll.SearchedElement>
+                  <uix:SearchedElement>
+                    <uix:SearchedElement.InUiElement>
+                      <InArgument x:TypeArguments="ui:UiElement" />
+                    </uix:SearchedElement.InUiElement>
+                    <uix:SearchedElement.OutUiElement>
+                      <OutArgument x:TypeArguments="ui:UiElement" />
+                    </uix:SearchedElement.OutUiElement>
+                    <uix:SearchedElement.Target>
+                      <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/profilepreview" ContentHash="P5HP2f-5x0GtxYADA6aYsQ" DesignTimeRectangle="11, 225, 1897, 3296" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='root' tag='DIV' /&gt;" Guid="2d93703d-edfe-4fe8-8d4a-5d5a19543429" InformativeScreenshot="2254a8f5232d3008bdc6f156b946bc6f.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/IYdu3oNBBEiq4Q_HPADKFg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                    </uix:SearchedElement.Target>
+                    <uix:SearchedElement.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:SearchedElement.Timeout>
+                  </uix:SearchedElement>
+                </uix:NMouseScroll.SearchedElement>
+              </uix:NMouseScroll>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Submit &amp; Save(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_43" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/profilepreview" CVScreenId="2f3736ef-1884-4d15-9f5b-9dff4b88a654" ContentHash="A098qvmcq0yUcQSYZmk6yA" CvElementArea="622, 849, 675, 70" CvTextArea="855, 872, 163, 25" CvTextArgument="Submit &amp; Save" CvType="Button" DesignTimeRectangle="624, 851, 672, 66" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='8' tag='BUTTON' type='' class='PreviewScreen_button1__9NsjA' aaname='Submit &amp;amp; Save' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Submit &amp;amp; Save' /&gt;" Guid="ea146a65-b19c-4d9c-97fe-581aee0c384e" InformativeScreenshot="b35429cf7ffed4c99c9b838d54404d27.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/5ZJ_Es8tSkaMqEmDUU6Tiw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="2f3736ef-1884-4d15-9f5b-9dff4b88a654" CvElementArea="622, 849, 675, 70" CvTextArea="855, 872, 163, 25" CvTextArgument="Submit &amp; Save" CvType="Button" DesignTimeRectangle="859, 868, 158, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='8' tag='SPAN' type='' class='' aaname='Submit &amp;amp; Save' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Submit &amp;amp; Save' /&gt;" Guid="7ec437ee-f53b-44ae-85ff-a6a501e9b779" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NGetText DisplayName="Get Text 'Registration STEP 1 for…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" TextString="[RegStepone]" Version="V5">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/qualifiedRunner" ContentHash="ccSWYC8N7Uy4LTjPVzl6Og" DesignTimeRectangle="624, 581, 672, 96" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='B' /&gt;" Guid="17f4a512-fc86-4032-a7d9-f8f790a064b5" InformativeScreenshot="d957ff41373e59c5b1ed55c1eb2d548b.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/t2olebIE8k6UvEiR-pmCjg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[RegStepone = &quot;Registration STEP 1 for PBG 2026 is complete.&quot;]" sap:VirtualizedContainerService.HintSize="416,124" sap2010:WorkflowViewState.IdRef="VerifyExpression_5" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,186" sap2010:WorkflowViewState.IdRef="NClick_53" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/qualifiedRunner" ContentHash="OJNkO1vagUq4TEf2rHRYqA" DesignTimeRectangle="624, 929, 672, 66" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='2' tag='BUTTON' type='' class='PreRegistrationSuccessful_button1__qi+rT' aaname='Next' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Next' /&gt;" Guid="51f472a9-ee2f-4253-bbfb-4d70f6fd3dbc" InformativeScreenshot="2e67cbcc2abec62b9cc7fa7761fa43bb.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/NWVj1A2GkUKF0AF30Yr0-Q" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="913, 946, 50, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='' aaname='Next' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Next' /&gt;" Guid="925c67ac-6054-4c02-bbc9-2efd2d739c46" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+            <Sequence DisplayName="Generate ticket for uder" sap:VirtualizedContainerService.HintSize="520.6666666666666,1317.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_18">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="Ticket_Gen" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Visit Event Page'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_44" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/browseEvents" CVScreenId="82005526-29c8-4336-810f-1119bdad1f48" ContentHash="3EHMLdGrr0CqkA1AVqAU1A" CvElementArea="658, 597, 603, 72" CvTextArea="846, 620, 181, 30" CvTextArgument="Visit Event Page" CvType="Button" DesignTimeRectangle="661, 599, 598, 68" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='1' tag='BUTTON' type='' class='' aaname='Visit Event Page' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Visit Event Page' /&gt;" Guid="cac6ff33-d3b6-4708-af23-11d38aa4128a" InformativeScreenshot="49dfe6b1b6e06faff4327641ae3c0400.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/kuQA1j7QxEaV8C8fbNSYRg" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="82005526-29c8-4336-810f-1119bdad1f48" CvElementArea="658, 597, 603, 72" CvTextArea="846, 620, 181, 30" CvTextArgument="Visit Event Page" CvType="Button" DesignTimeRectangle="850, 617, 175, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='' aaname='Visit Event Page' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Visit Event Page' /&gt;" Guid="3b08aa17-05e4-4fdf-8baf-87963d4b9b42" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'STEP 2 (Final Step) is …'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_45" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/eventDetails" CVScreenId="78092617-ed03-4774-a0bf-15f9cd4761fe" ContentHash="NEl4GkyUS02GGHEHjQ4GOw" CvElementArea="632, 833, 628, 72" CvTextArea="771, 857, 306, 30" CvTextArgument="STEP 2 (Final Step) is Open!" CvType="Button" DesignTimeRectangle="635, 835, 624, 68" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='2' tag='BUTTON' type='' class='' aaname='STEP 2 (Final Step) is Open!' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='STEP 2 (Final Step) is Open!' /&gt;" Guid="2fa06b64-aaa9-4d2f-b905-b98c790ed289" InformativeScreenshot="e75651fb2824f4dcadbe692e23b00a9d.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/Q2Q5VbDv502VLOR4BX_IFQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="78092617-ed03-4774-a0bf-15f9cd4761fe" CvElementArea="632, 833, 628, 72" CvTextArea="771, 857, 306, 30" CvTextArgument="STEP 2 (Final Step) is Open!" CvType="Button" DesignTimeRectangle="774, 853, 302, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='SPAN' type='' class='' aaname='STEP 2 (Final Step) is Open!' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='STEP 2 (Final Step) is Open!' /&gt;" Guid="ff3f549b-b5ed-4ee0-9278-24531b4bd143" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pay ₹2950- Now!'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_46" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/checkOut" CVScreenId="ff9a5d56-bfe4-49b7-ab91-d1061b071f36" ContentHash="U-whW4yXOECE7grVw5xf1g" CvElementArea="618, 926, 634, 70" CvTextArea="815, 951, 196, 28" CvTextArgument="Pay ₹2950/- Now!" CvType="Button" DesignTimeRectangle="624, 929, 624, 66" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='1' tag='BUTTON' type='' class='EventRegistrationCheckOut_button1__+m+X-' aaname='Pay ₹2950/- Now!' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Pay ₹2950/- Now!' /&gt;" Guid="8e80e139-e738-4c13-ba0f-1c0e96fc581d" InformativeScreenshot="18b0e6852254e14f161ba728c3de691b.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/BptmiOZ9FUeY-QscYT488A" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="ff9a5d56-bfe4-49b7-ab91-d1061b071f36" CvElementArea="618, 926, 634, 70" CvTextArea="815, 951, 196, 28" CvTextArgument="Pay ₹2950/- Now!" CvType="Button" DesignTimeRectangle="818, 946, 192, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='1' tag='SPAN' type='' class='' aaname='Pay ₹2950/- Now!' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Pay ₹2950/- Now!' /&gt;" Guid="f242b68b-cf0f-444e-a1c7-fd08b14991e5" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Back'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,195.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_54" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="staging.sarvarth.com/login" ContentHash="4q4yjKIsDUK14hH9EcJRqw" DesignTimeRectangle="11, 80, 60, 51" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='sandbox.cashfree.com/pg/view/sessions/checkout - Google Chrome -*' role='pane' /&gt;&lt;ctrl name='Back' role='push button' /&gt;" Guid="f42de755-b2f8-4a68-8aa1-04a4a178533e" InformativeScreenshot="b015e7ba8bb35dfeba81104a32aa215a.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/1gjbFT6tOUSZV0-8C1EfEw" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='sandbox.cashfree.com/pg/view/sessions/checkout - Google Chrome' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NGetText DisplayName="Get Text 'Congratulations!You suc…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,143.33333333333334" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" TextString="[Ticket_Gen]" Version="V5">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/successfulCheckOut" ContentHash="j2H0DXHzpUC_BxBehD1r3g" DesignTimeRectangle="702, 216, 515, 108" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='root' tag='DIV' /&gt;" Guid="ebf33e01-d66c-4274-a6c9-9a90b68db401" InformativeScreenshot="f08e0c55068b0c3bac250122d4802329.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/IOwmMgZtrUSxqI0xQ9ApLQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[Ticket_Gen =&quot;Congratulations!😃🎉You successfully booked your ticket&quot;]" sap:VirtualizedContainerService.HintSize="416,124" sap2010:WorkflowViewState.IdRef="VerifyExpression_6" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Download My Ticket'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,186" sap2010:WorkflowViewState.IdRef="NClick_51" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fc1911ac-576a-4ed4-b37e-e8cebff41262" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="olympia.sarvarth.com/successfulCheckOut" CVScreenId="9398a9f2-18ad-4063-9d45-312cd6273aa2" ContentHash="cgflOLePbEadlPACHGr11w" CvElementArea="697, 744, 523, 74" CvTextArea="827, 768, 223, 25" CvTextArgument="Download My Ticket" CvType="Button" DesignTimeRectangle="702, 747, 515, 68" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='' aaname='Download My Ticket' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Download My Ticket' /&gt;" Guid="5079bc1f-04fc-46bf-8578-57c85e62eac6" InformativeScreenshot="dc6c6ef4ffe59f64a6c725bc796a6354.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/sRRdeZbuH0yn_iIDXcFZEw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target CVScreenId="9398a9f2-18ad-4063-9d45-312cd6273aa2" CvElementArea="697, 744, 523, 74" CvTextArea="827, 768, 223, 25" CvTextArgument="Download My Ticket" CvType="Button" DesignTimeRectangle="829, 765, 219, 32" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Download My Ticket' tag='SPAN' type='' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Download My Ticket' /&gt;" Guid="73e7b859-4803-4515-aeac-08e91568e50d" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" ContentHash="wybRagUFv0CIRipmgRLb8w" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAA3PSURBVGhDvZcJVBRHGoDHSAxqFCQmoAIOh8g1nKIgOtyHokLiJuvFlXhFjSZuTAwe6EbEgxuUKOARj2Q9Qq7dXAIqkN14hPjeJrpGA66ImzUyQMyq9FD/vv+v7qanBzDJy269973/r7+6p76qrh4GjeY3aEMs+lvPsrNJe93NIX+vzqXy3ESfxiuT/QzfR46D7yOD4Ire33A2xLuxMmBszetjHPLjHrdOsrccoLUcMMBqnLtrSvq06HdfTZ55KWtxcgfyyryZF9MSoisD3V2T8Rr1fL9JQ+lFDrYrKv3caiRRHhV5hNTn/CsikGiMCYYP50xnecvSu3KXPwd9sWVJ6t1EfXDBkEEDbdUOv6qh+CrtyMxvJ/u2fh8RyEgsPMA0ongEj8oacm56OCtcmmYm+iCyFiW3ezs7Jqp9flFbpR2R+a18NKQd7ZajWlgAk3b6ZlgAuxnmT/2W8ED49PcJkPvCs2ZyP5ecF55l0UF+a/tpNP3Ubn02PK9V47wacDcJFFRFSZRieCDcDA8QwWsC4fOkKDOhX0uQ55h0tWOv7Rnb4amXJ/kaZMHwABLqFlXKioQFQAui92ctej/WkKCHvB52Pkes5b24wJQV82lMGlezbWl6p5vjqBi1q1l7ebRdpiQriUm7i3I8+vEYxsdJXu/HWsL8xRgAb6fONJOQ5LYtTYNNz/0eXk9/Gv6Y/jTF7EVzIVdaRA8LQPCbS+1r0v7gaJep3F1Jhu+smOv9qX9jsiiMud6foDG9P1yJDOr13G99PgXKN66GM5/9Bb6qq4EL9ScpP5yXBVsWzTNZqBp8H4YOHjRC7U3tGdvHUltISnEcxD4XFQXFyKX9cCE8n+TLpHjyyWizyRE8JlnzZ8OxnXmA7UIdl//m7F+hq6sLPn1rH2QtmE1PQn2vRIjOfbHanV7YiyG6VhKc7MdQAkWVu8ql/URRHpulnBbhB82TOW+mP83UE0tsXjAHjpTkgNDZSaJ4fNbOmgZ/++RDuNPeBlsWJ/f6BJAFiXEfq/01X0zwbDTZRRTCXBRSRspDfZgkKzMJ8aVY1Mt3Pj6BzfPnwNEduWA0Gunl3fTsM5A5LxEaTlfDrZZmyF441+w+JZsWJbeZyK90sM2Ud1ElbiqIcgpwEaradTHmL0s3m1heAD6B4u3AGIOrf78Al748A9ev/APu/nQHyja8Atn4HvRxhLYuSbsnyw8YPki7/aXw7t0M9WHXQ334AmSh7hzHKEpM1LHm+FBoryiFe1+eBaHlBp3tgpcWmU1ssoCSHDrztR8ch6qjh6Dq2GFovnqZ3gk8Qnhtb8fI5AloFwfs0+9Lgi+nBsm7ZyooCof6iEi5L9z8XTxJ99R2Z64ym1hegOII5a5YQO/AhpSnoOL1DLp3f/Z6/pXaw/0I/gDku//YIG3A4acg8PBT8PymWFnsnxN1KmnOPyVCvJmhYCt0dXSYSLcYGHz41X0oq7kHhZsLzCaWUL7EeS8tpHdgY+pM2JnxIn3OW/mbYfPCOZC7vOdjJP8tsNE7pvkdSmT+h5Ig4NCT8JenJ4iCOkZxooSOpDG/FuLN2sp3moh/0HAfFu+7A0GZbTB+QzvFuavfM5sYUX+N4vH58/7d8NGBcvj3jesE/SFblt7rHzP5a9Q9K6LB72AiQ3lcSMq2eC4rSl8LRmkdXJMI0UFrwRZZvMXQBYv2cvFxG9ogaEMbjMM8sw0i1/7DbGKJLYvnwb7s9fDthfPQdPHv0HTpa+LMiY+g+JVlsHVJCr+2l3fAZuijWjo+vgdmMN+Dicz/YBL4HUwCjCWLQtm1YC92LcSbhDFvEvvNSbFMOjYoPz2/QxZGAtd3g/2XV24zm1x6MbcvTaOjlDV/FoE/K/AoYV15nZrKrU+B9eCHrDVDA20T/Q4kgprQihnwtV7HmiagOC7CGzA2TfBkP374rrz7C/f8CIHrDQraIDCzDQIUtYg1l2Db8oVmEvKPuRXzTXlxQZ/yBS+mg+GEH6RMsUrTjJzjle/75gzgJFLEBfi8OZ1teWGyLN04wQsag72g+clYWf79hvsk2jN8ERK/e/UTM5HeBB80duGQHoTP3SF3+RMFGpfVITU++2eAbv90plyEbv80hvUvYvyA5EVu52XLC0jIbQf/dYZu1ivyHkhd9baZzC+lblcMCPVjmVDvDsez7d/VeORENfrsnw49ods3jc3OimKNQR7suyAP1jjeE+6eP0Pyl24awW+dgUA5Ke+bVpi+uhayly8xE3sQxStT4fKRYBDqxzDEWO8GV485NWq89yUwn33TAdER0yjHOuZYez/Rnxbw3XhP+Tu/+ptO8F3XylkrxnWtJMqjsqasG2BixlV4aWWOmWRvHM9OgtZPvUGoc2VC3RiKxnpXuPWRk0Gj2zsNvPcmMIy9EVUUD9+Nc2dXA8cy6fiUVt8Fn7WtMpKsSa2HnBYr5jGrz0LKqrchf1MO7NmUAUUvL4GilWlQkTEbjm1OYnW7oqCpMhBQVqhzZsY6FzDWuVKf8npX0Hjtncq8aRFKEsB7TwLlXnumMs89U1nBc8FwNdBdXsDOqv+YyEro+uirx6QafpbUULRbVsKZU++C4yDUOjFjvTPlGo+SOIPnninMC4X3JADmGL0qplIf654VU9j40ni4EOoJQkszTfTul/dAt6YVvNfcpogiFJW5KkrXequuq/qmU7RvJymUFWq1TKhzAoQvwIlqFHlONY3rtvBGlEQ8KqYwWbxiqgzWkdUrQuE/576guW4YukiIw+V6Rj2m7t+Giy1G+kzW9leSMtZqSbAbR4a17rojQ64cGdWosV8aUOlZPhU8RVnP8ikmuUd5PEOoXj4Vzh3bLT/utPJ28FpzG7zWtIrxlxOb0yZ/XtfVjSDUjgajCqHWEYTTDkyoRRzl/oki2xqN3SzPfC7HZWkxYh9xL4tjHhTjGTIrP1GesPL8ffDMuA2ea0QyuBTVHoB0XeX5e/LnGc+EMKHWnhlJEKM9SqMs9XkUqXWA3GVWBRqrkFFpKEmiZfGA0GLKJHiNw/tftFyQJ00t6wCPjNsyKOWR8YMsqhwzveY2pJa1y5/Dvj8qiYqMYsLpkYxHezBSDfv2YKzlzJhkmajpP9DCmuR2x8PY3bG0CHfK4xhGJVjDa6LeSoWO+3do4ubWLojeZgD3jB9I3P01Hrvz23INr5Fq0dsN0Gzoos/ouHcHjGcmoCwXPTWCcoxGZSRGiuMjmNa2v5Z+Tjv8IajGfXecKBoHY3fFMurvkmq8Tn2xlvV5qbx7uIiUsnaSM0NcgJLksna6R2ptlzeKUihnx4jTI7Cm6Nsx4+kRgGD9fPnwBvnfSesoxxVjd6E4x+2NGNbdjzWp09gbvFZ87oAsge2dc/cgcmsruL32A4x97Qc5SiTvboN3FGce2/ELFdBag8dDFlZgy4ynlX2O8ZQdJMdZpsoLeMjSwto1P8Iw5o0YhpCgKInRTQTHMCpr+CTwCCjbxRtG+Ozr+1D02U9QfOIneOfcXZMdx9Zx70fIqi+Fo+97gHDqCdxlFBZzWzBSLvEEGE89AcLJxxmCY/LxkZrNNOdMScqtNBbGlEYzt9IYIN6IBVex77ozmhaB/THieNjBuez4pU9MBPtqf7vxFYQdmMvCyvUM5WRODmeE3H+cEOVBOPkYLgAqXh2y10QeGz4F55zwVklszM4YoEh5tEkfpeU+jon98APzIKuulASvd/xLFsYca0Vn3oTAPUn83p3R0PTZSBLiYsNxAaZ5DeYmY4Sj7UOmuy+1YQnOma6irMvOKCaLU5TgfZcdOE5PRM6x7rqDgzUp8nFlLZKtOhwAwkkbZjyFYjYoKkoPE3PExjTWDGPr0ywz1d4mzWH1hAZJQkKSd90RJaIcV/eVNen6KHAuiSR5zANKw6HpUzswilIkWIOSNmAkWexbM6rVDAPh5DCKV94a+p3a16xZ2FhqnbbrDS4lUSCBkyojyvAYwSQxjJwIGpNQ911KIiH/iDtDISOJWbPOGismENZizYph7KweSjXk1gdDDdrejo66DRlvl+ZUHMEQaVJOFLgUR3JKIsG5OBK6r+Fj2Jfrxfwa5X2TdoWKUt1yPLcSha1AkOMQJlQPpZgY+nCS2rPPZjPFeQNO3hNOReGypFwvijC7TkJbFM7wHuTIO85cTBKsGQqdYuSyjzKhegguilM9BNalPLJB7fezmvUUbSaJFUWIEjwikpi2MJw5F+GiIgh5XOxLEZlVMY6ElBhrUNa0JlQPZlSvfhTWpz7c90v7oDbIe3iS45ZJBm1huCziVBgBowvDmLYwjGEu1ZwKw6mOYB/vUfabPrYhORQzZTAI1YMYxs6qgUyoGshuvT/IkBJnkab2+VXNYpil1n79hEYSLAhj2gIxFoZzyYIwNrpAz6QxGXlcz1bu9+ZyJDoIUJLEeY3HqoEY4exuywatbb+f98L+kmYVPzpTEnMs0DNtQRiJOuZjzqOUj87nY0jojmBo+ngY7jJHFBWqLGVpoeoRduu9AYZ1KRa/7rz/3IZP47HZY/eiKEoqccidTAtwyJ9MY475eqqX/UlLgkKVJUpzTjwi57fee7h1XUr/TOvB/azV8/3PGi7k0SC7tBEvBzagOAnn6WV4TQ8TS4JRvhsUPzGACScGwIm8h2uWzey/4v8q3lPDxeDLbp3knP/487qakWvHN+Ii7HMmsbePjoJb71kYLh+yaDy20aIy5/n++clx/VJ/K+n/AgYZjyFErMXCAAAAAElFTkSuQmCC" InformativeScreenshot="b5406e70b1dd182fc1be3be7ad696a51.jpg" Reference="MxNu6IYXQEiXuntZkOyw8A/Fu6lU9rqZ0iS2NPQGpwgEg" Selector="&lt;html app='chrome.exe' title='SHHM' /&gt;" Url="https://olympia.sarvarth.com/landing" Version="V3" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

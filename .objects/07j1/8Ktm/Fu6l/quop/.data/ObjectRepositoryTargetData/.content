@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="cVCwdoQcLE2uUZfimuO-ew" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="olympia.sarvarth.com/runnerProfileInfo" CVScreenId="3d8c280e-4f2e-486c-97f4-81155ec09056" CvElementArea="633, 842, 629, 70" CvTextArea="827, 864, 196, 25" CvTextArgument="Next - T-Shirt Size" CvType="Button" DesignTimeRectangle="635, 845, 624, 66" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='13' tag='BUTTON' type='' class='PastRunningExperienceProfilePage_label__zNK4r' aaname='Next - T-Shirt Size' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Next - T-Shirt Size' /&gt;" Guid="ece2f6b5-4e93-46c4-a3ba-c062576de490" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="3d8c280e-4f2e-486c-97f4-81155ec09056" CvElementArea="633, 842, 629, 70" CvTextArea="827, 864, 196, 25" CvTextArgument="Next - T-Shirt Size" CvType="Button" DesignTimeRectangle="829, 863, 193, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='13' tag='SPAN' type='' class='' aaname='Next - T-Shirt Size' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Next - T-Shirt Size' /&gt;" Guid="bb9f4689-8d56-4f4d-848b-d5b6e870f497" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3946edb28cc1fd59f13c0ba67c9ebd4b.jpg" xmlns="">0M_KPVCPTvUaNRDi8UIRkLg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

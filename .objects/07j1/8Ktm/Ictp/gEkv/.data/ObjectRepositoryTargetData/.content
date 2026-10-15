@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HIEYFt_wMEGIJJfkIkwJNQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="olympia.sarvarth.com/medicalProfileInfo" DesignTimeRectangle="11, 276, 1897, 1691" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='root' tag='DIV' /&gt;" Guid="984b8af9-0734-4201-b932-37674770881e" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHHM' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="bc9b3dbf4c0a51e4724c2167361dc9bc.jpg" xmlns="">0SXUW_XNCNU6QrrBbZ_WGuQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
