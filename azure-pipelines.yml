@@ -20,7 +20,7 @@ steps:
     testTarget: 'TestSet'
     orchestratorConnection: 'Uipath_Cloud_Connection_Demo'
     projectKey: 'UID'
-    testSet: 'UID:77'
+    testSet: 'UID:76'
     folderName: 'Demo'
     traceLevel: 'Verbose'
 
@@ -32,7 +32,7 @@ steps:
     testTarget: 'TestSet'
     orchestratorConnection: 'Uipath_Cloud_Connection_Demo'
     projectKey: 'UID'
-    testSet: 'UID:80'
+    testSet: 'UID:81'
     folderName: 'Demo'
     traceLevel: 'Verbose'
 
@@ -44,7 +44,7 @@ steps:
     testTarget: 'TestSet'
     orchestratorConnection: 'Uipath_Cloud_Connection_Demo'
     projectKey: 'UID'
-    testSet: 'UID:79'
+    testSet: 'UID:3'
     folderName: 'Demo'
     traceLevel: 'Verbose'
 
@@ -56,6 +56,6 @@ steps:
     testTarget: 'TestSet'
     orchestratorConnection: 'Uipath_Cloud_Connection_Demo'
     projectKey: 'UID'
-    testSet: 'UID:83'
+    testSet: 'UID:4'
     folderName: 'Demo'
     traceLevel: 'Verbose'
