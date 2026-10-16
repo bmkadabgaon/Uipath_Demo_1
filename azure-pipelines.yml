@@ -3,52 +3,59 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
-- none
+
  
+trigger: none
+
 pool:
   name: 'Uipath_Demo'
   demands:
   - agent.name -equals AgentDemo1
- 
+
 steps:
 - task: UiPathTest@6
-  displayName: 'Run Test Manager Test Set - UPD:1'
+  displayName: 'Run Test Manager Test Set - UID:77'
+  timeoutInMinutes: 60
   inputs:
     testTarget: 'TestSet'
-    orchestratorConnection: 'CICD_TM'
-    projectKey: 'UPD'
-    testSet: 'UPD:1'
-    folderName: 'Testing'
+    orchestratorConnection: 'Uipath_Cloud_Connection_Demo'
+    projectKey: 'UID'
+    testSet: 'UID:77'
+    folderName: 'Demo'
     traceLevel: 'Verbose'
- 
+
 - task: UiPathTest@6
-  displayName: 'Run Test Manager Test Set - UPD:3'
+  displayName: 'Run Test Manager Test Set - UID:80'
+  condition: succeededOrFailed()
+  timeoutInMinutes: 60
   inputs:
     testTarget: 'TestSet'
-    orchestratorConnection: 'CICD_TM'
-    projectKey: 'UPD'
-    testSet: 'UPD:3'
-    folderName: 'Testing'
+    orchestratorConnection: 'Uipath_Cloud_Connection_Demo'
+    projectKey: 'UID'
+    testSet: 'UID:80'
+    folderName: 'Demo'
     traceLevel: 'Verbose'
- 
+
 - task: UiPathTest@6
-  displayName: 'Run Test Manager Test Set - UPD:5'
+  displayName: 'Run Test Manager Test Set - UID:79'
+  condition: succeededOrFailed()
+  timeoutInMinutes: 60
   inputs:
     testTarget: 'TestSet'
-    orchestratorConnection: 'CICD_TM'
-    projectKey: 'UPD'
-    testSet: 'UPD:5'
-    folderName: 'Testing'
+    orchestratorConnection: 'Uipath_Cloud_Connection_Demo'
+    projectKey: 'UID'
+    testSet: 'UID:79'
+    folderName: 'Demo'
     traceLevel: 'Verbose'
- 
+
 - task: UiPathTest@6
-  displayName: 'Run Test Manager Test Set - UPD:82'
+  displayName: 'Run Test Manager Test Set - UID:83'
+  condition: succeededOrFailed()
+  timeoutInMinutes: 60
   inputs:
     testTarget: 'TestSet'
-    orchestratorConnection: 'CICD_TM'
-    projectKey: 'UPD'
-    testSet: 'UPD:82'
-    folderName: 'Testing'
+    orchestratorConnection: 'Uipath_Cloud_Connection_Demo'
+    projectKey: 'UID'
+    testSet: 'UID:83'
+    folderName: 'Demo'
     traceLevel: 'Verbose'
- 
