@@ -95,7 +95,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="TC01_DB" sap:VirtualizedContainerService.HintSize="514.6666666666666,748" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="TC01_DB" sap:VirtualizedContainerService.HintSize="514.6666666666666,867.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:DatabaseConnection" Name="DB_Connection" />
       <Variable x:TypeArguments="x:String" Name="UserData" />
@@ -106,36 +106,19 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Get User Details from Database and Display" sap:VirtualizedContainerService.HintSize="450,380" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="Get User Details from Database and Display" sap:VirtualizedContainerService.HintSize="450,499.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:DatabaseConnect DisplayName="Connect to Database" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="System.Data.Odbc" ConnectionString="Driver={PostgreSQL Unicode(x64)};server=olympia.sarvarth.com;port=5432;database=postgres;uid=admin;pwd=nrvQJup7^eitwH!&amp;c4Cc" DatabaseConnection="[DB_Connection]" />
-      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,57.333333333333336" sap2010:WorkflowViewState.IdRef="CommentOut_1">
-        <ui:CommentOut.Body>
-          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,227.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_5">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="SharedMobileNumber" CacheStrategy="None" DisplayName="Get Asset from Orchestrator" FolderPath="Testing" sap:VirtualizedContainerService.HintSize="416,167.33333333333334" sap2010:WorkflowViewState.IdRef="GetRobotAsset_1">
-              <ui:GetRobotAsset.Value>
-                <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.NewRegistrationMobileNumber]</OutArgument>
-              </ui:GetRobotAsset.Value>
-            </ui:GetRobotAsset>
-          </Sequence>
-        </ui:CommentOut.Body>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:CommentOut>
+      <ui:DatabaseConnect DisplayName="Connect to Database" sap:VirtualizedContainerService.HintSize="416,92" sap2010:WorkflowViewState.IdRef="DatabaseConnect_1" ProviderName="System.Data.Odbc" ConnectionString="Driver={PostgreSQL Unicode};server=localhost;port=5432;database=postgres;uid=admin;pwd=uE8CWKMD47GsotrqHaLzfqWQW4LhwBqzdhaB5Ev3JjdyB3AEcb" DatabaseConnection="[DB_Connection]" />
+      <ui:GetRobotAsset TimeoutMS="{x:Null}" AssetName="SharedMobileNumber" CacheStrategy="None" DisplayName="Get Asset from Orchestrator" FolderPath="Demo" sap:VirtualizedContainerService.HintSize="416,176.66666666666666" sap2010:WorkflowViewState.IdRef="GetRobotAsset_2">
+        <ui:GetRobotAsset.Value>
+          <OutArgument x:TypeArguments="x:String">[GlobalVariablesNamespace.GlobalVariables.NewRegistrationMobileNumber]</OutArgument>
+        </ui:GetRobotAsset.Value>
+      </ui:GetRobotAsset>
       <ui:ExecuteQuery ContinueOnError="{x:Null}" TimeoutMS="{x:Null}" DataTable="[DT_User]" DisplayName="Run Query to get user details using MobileNumber" ExistingDbConnection="[DB_Connection]" sap:VirtualizedContainerService.HintSize="416,138.66666666666666" sap2010:WorkflowViewState.IdRef="ExecuteQuery_1" Sql="[String.Format(&quot;SELECT name FROM sportsperson WHERE phone='{0}';&quot;, GlobalVariablesNamespace.GlobalVariables.NewRegistrationMobileNumber)]">
         <ui:ExecuteQuery.Parameters>
           <scg:Dictionary x:TypeArguments="x:String, Argument" />

@@ -10,27 +10,27 @@
             </summary>
             <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
         </member>
-        <member name="M:UiPathDemo.WorkflowRunnerService.PerformanceTestingBootloaderWorkflow(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Object},System.Boolean)">
+        <member name="M:UiPathDemo.WorkflowRunnerService.Register_User_and_Ticket_Generation(System.Boolean)">
             <summary>
-            Invokes the PerformanceTestingBootloaderWorkflow.cs
+            Invokes the UiPath Demo/01_SHHM Web/Register_User and Ticket Generation.xaml
             </summary>
             <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
         </member>
-        <member name="M:UiPathDemo.WorkflowRunnerService.TC01_Register_New_User(System.Boolean)">
+        <member name="M:UiPathDemo.WorkflowRunnerService.Sequence(System.Boolean)">
             <summary>
-            Invokes the UiPath Demo/01_SHHM Web/TC01_Register New User.xaml
+            Invokes the Sequence.xaml
+            </summary>
+            <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
+        </member>
+        <member name="M:UiPathDemo.WorkflowRunnerService.Tc01_Register_user(System.Boolean)">
+            <summary>
+            Invokes the Tc01_Register_user.xaml
             </summary>
             <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
         </member>
         <member name="M:UiPathDemo.WorkflowRunnerService.TC02_UpdateUserName(System.Boolean)">
             <summary>
             Invokes the UiPath Demo/02_SHHM API/TC02_UpdateUserName.xaml
-            </summary>
-            <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
-        </member>
-        <member name="M:UiPathDemo.WorkflowRunnerService.TC03_DataBase(System.Boolean)">
-            <summary>
-            Invokes the UiPath Demo/03_SHHM Database/TC03_DataBase.xaml
             </summary>
             <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
         </member>
@@ -41,5 +41,11 @@
             <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
         </member>
         <!-- Badly formed XML comment ignored for member "M:UiPathDemo.WorkflowRunnerService.TC05_Validate_Json_Test(System.String,System.String,System.String,System.Boolean)" -->
+        <member name="M:UiPathDemo.WorkflowRunnerService.Update_user(System.Boolean)">
+            <summary>
+            Invokes the UiPath Demo/02_SHHM API/Update user.xaml
+            </summary>
+            <param name="isolated">Indicates whether to isolate executions (run them within a different process)</param>
+        </member>
     </members>
 </doc>
