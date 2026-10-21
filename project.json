@@ -112,7 +112,7 @@
         "testCaseId": "9bcdbe03-9305-44a2-b389-87b32d09958b",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "UiPath Demo\\06_PDF_Validation\\TC06_Pdf_Validation.xaml"
+        "fileName": "TC06_Pdf_Validation.xaml"
       }
     ],
     "saveToCloud": false
