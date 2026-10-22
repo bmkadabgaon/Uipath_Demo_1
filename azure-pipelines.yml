@@ -24,3 +24,75 @@ steps:
     folderName: 'Uipath_Testing_Demo'
     traceLevel: 'Verbose'
 
+- task: UiPathTest@6
+  displayName: 'Run Test Manager Test Set - UID:236'
+  condition: succeededOrFailed()
+  timeoutInMinutes: 60
+  inputs:
+    testTarget: 'TestSet'
+    orchestratorConnection: 'Uipath_Cloud_Connection_Demo'
+    projectKey: 'UID'
+    testSet: 'UID:236'
+    folderName: 'Uipath_Testing_Demo'
+    traceLevel: 'Verbose'
+
+- task: UiPathTest@6
+  displayName: 'Run Test Manager Test Set - UID:239'
+  condition: succeededOrFailed()
+  timeoutInMinutes: 60
+  inputs:
+    testTarget: 'TestSet'
+    orchestratorConnection: 'Uipath_Cloud_Connection_Demo'
+    projectKey: 'UID'
+    testSet: 'UID:239'
+    folderName: 'Uipath_Testing_Demo'
+    traceLevel: 'Verbose'
+
+- task: UiPathTest@6
+  displayName: 'Run Test Manager Test Set - UID:241'
+  condition: succeededOrFailed()
+  timeoutInMinutes: 60
+  inputs:
+    testTarget: 'TestSet'
+    orchestratorConnection: 'Uipath_Cloud_Connection_Demo'
+    projectKey: 'UID'
+    testSet: 'UID:241'
+    folderName: 'Uipath_Testing_Demo'
+    traceLevel: 'Verbose'
+
+- task: UiPathTest@6
+  displayName: 'Run Test Manager Test Set - UID:243'
+  condition: succeededOrFailed()
+  timeoutInMinutes: 60
+  inputs:
+    testTarget: 'TestSet'
+    orchestratorConnection: 'Uipath_Cloud_Connection_Demo'
+    projectKey: 'UID'
+    testSet: 'UID:243'
+    folderName: 'Uipath_Testing_Demo'
+    traceLevel: 'Verbose'
+
+- task: UiPathTest@6
+  displayName: 'Run Test Manager Test Set - UID:246'
+  condition: succeededOrFailed()
+  timeoutInMinutes: 60
+  inputs:
+    testTarget: 'TestSet'
+    orchestratorConnection: 'Uipath_Cloud_Connection_Demo'
+    projectKey: 'UID'
+    testSet: 'UID:246'
+    folderName: 'Uipath_Testing_Demo'
+    traceLevel: 'Verbose'
+
+- task: UiPathTest@6
+  displayName: 'Run Test Manager Test Set - UID:248'
+  condition: succeededOrFailed()
+  timeoutInMinutes: 60
+  inputs:
+    testTarget: 'TestSet'
+    orchestratorConnection: 'Uipath_Cloud_Connection_Demo'
+    projectKey: 'UID'
+    testSet: 'UID:248'
+    folderName: 'Uipath_Testing_Demo'
+    traceLevel: 'Verbose'
+
