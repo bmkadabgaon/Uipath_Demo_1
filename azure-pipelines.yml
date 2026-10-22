@@ -14,48 +14,13 @@ pool:
 
 steps:
 - task: UiPathTest@6
-  displayName: 'Run Test Manager Test Set - UID:77'
+  displayName: 'Run Test Manager Test Set - UID:230'
   timeoutInMinutes: 60
   inputs:
     testTarget: 'TestSet'
     orchestratorConnection: 'Uipath_Cloud_Connection_Demo'
     projectKey: 'UID'
-    testSet: 'UID:77'
-    folderName: 'Demo'
+    testSet: 'UID:230'
+    folderName: 'Uipath_Testing_Demo'
     traceLevel: 'Verbose'
 
-- task: UiPathTest@6
-  displayName: 'Run Test Manager Test Set - UID:80'
-  condition: succeededOrFailed()
-  timeoutInMinutes: 60
-  inputs:
-    testTarget: 'TestSet'
-    orchestratorConnection: 'Uipath_Cloud_Connection_Demo'
-    projectKey: 'UID'
-    testSet: 'UID:80'
-    folderName: 'Demo'
-    traceLevel: 'Verbose'
-
-- task: UiPathTest@6
-  displayName: 'Run Test Manager Test Set - UID:79'
-  condition: succeededOrFailed()
-  timeoutInMinutes: 60
-  inputs:
-    testTarget: 'TestSet'
-    orchestratorConnection: 'Uipath_Cloud_Connection_Demo'
-    projectKey: 'UID'
-    testSet: 'UID:79'
-    folderName: 'Demo'
-    traceLevel: 'Verbose'
-
-- task: UiPathTest@6
-  displayName: 'Run Test Manager Test Set - UID:83'
-  condition: succeededOrFailed()
-  timeoutInMinutes: 60
-  inputs:
-    testTarget: 'TestSet'
-    orchestratorConnection: 'Uipath_Cloud_Connection_Demo'
-    projectKey: 'UID'
-    testSet: 'UID:83'
-    folderName: 'Demo'
-    traceLevel: 'Verbose'
